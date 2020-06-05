@@ -40,11 +40,11 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 - Qual é a precisão requerida nos resultados do projeto?
 
-    Devido ao proejto possuir um formato não muito complexo e ser caracterizado como um projeto acadêmico para simulação e comparação de dados, a precisão necessária será definida através dos cálculos e será o suficiente para a avaliação do problema.
+    Devido ao projeto possuir um formato não muito complexo e ser caracterizado como um projeto acadêmico para simulação e comparação de dados, a precisão necessária será definida através dos cálculos e será o suficiente para a avaliação do problema.
     
 - Qual é o prazo de entrega do projeto?
 
-    O projeto será dividido em 3 etapas, sendo elas: 
+    O projeto será dividido em 3 etapas: 
     1- Modelagem;
     2- Pré- processamento;
     3- Processamento e pós-processamento.
@@ -53,7 +53,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 - Há outra metodologia mais adequada do que CFD?
     
-    O projeto consiste em uma análise e comparação das simulações feitas em CFD e os cálculos, portanto para o resultado sólido, os cálculos utilizando equação de Bernoulli, número de Reynolds e sua relação com o fator e atrito já seriam necessários, porém por conta da natureza do projeto a simulação é importante para esta comparação, mas não necessariamente a mais adequada.
+    O projeto consiste em uma análise e comparação das simulações feitas em CFD e os cálculos, portanto para o resultado sólido, os cálculos utilizando equação de Bernoulli, número de Reynolds e sua relação com o fator de atrito já são suficientes, porém por conta da natureza do projeto a simulação é importante para esta comparação, mas não necessariamente a mais adequada para apresentar os resultados pedidos.
 
 O projeto deverá conter nesta etapa:
 
