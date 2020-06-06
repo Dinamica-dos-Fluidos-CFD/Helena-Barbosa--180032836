@@ -62,15 +62,14 @@ O projeto deverá conter nesta etapa:
 
 I) Imagem 1: Sketch com cotagem do diâmetro do tubo.
 
-![Teste de legenda de imagem 1](Print CFX Design Modeler Cotagem Diâmetro.png)
+
 
 II) Imagem 2: Extrude do Sketch --> geometria final do tubo.
 
-![Teste de legenda de imagem 2](Print CFX Design Modeler Extrude.png)
+
 
 III) Imagem 3: Desenho esquemático da modelagem do problema, elaborado no AutoCAD.
 
-![Teste de legenda de imagem 3](Esquemático do problema Autocad 2D.png)
 
 
 
