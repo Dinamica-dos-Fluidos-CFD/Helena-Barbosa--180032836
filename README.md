@@ -16,11 +16,11 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 
 - Qual é o objetivo do projeto?
     
-    O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação, com os dados apresentados o objetivo deste projeto é obter uma simulação confiável através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student e portanto averiguar através da teoria se os dados apresentados e os resultados computados nas simulações são consistentes com a realidade, além de levar em consideração o parâmetro do Fator de atrito e realizar um estudo paramétrico para definir a normalidade do cenário da instalação apresentada.
+    O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação, com os dados apresentados o objetivo geral deste projeto é obter uma simulação confiável através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student e portanto averiguar através da teoria se os dados apresentados e os resultados computados nas simulações são consistentes com a realidade, além disso possui como objetivo específico a análise do  parâmetro do Fator de atrito e realizar um estudo paramétrico para definir a normalidade do cenário da instalação apresentada.
 
 - Quais são seus requisitos de solução?
 
-    O requisito de solução do Projeto de CFD é o fator de atrito e os parâmetros necessários para o seu cálculo, como por exemplo a velocidade do escoamento, o diâmetro do tubo na seção mencionada, a viscosidade do fluido e a sua massa específica.    
+    O requisito de solução do Projeto de CFD é o fator de atrito ou o seu cálculo por meio dos parâmetros determinados pela simulação, tais como a velocidade do escoamento, o diâmetro do tubo na seção mencionada, a viscosidade do fluido e a sua massa específica.    
     
 - Qual é a finalidade do projeto?
 
@@ -30,6 +30,11 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 
     1) Utilizar cálculos simples, porém eficazes para obter informações sobre o escoamento de acordo com os dados fornecidos, como por       exemplo a equação de Bernoulli e as definições de vazão volumétrica para o cálculo da velocidade do fluido.
     2) Adotar apenas os parâmetros necessários para os cálculos. 
+    3) O escoamento será considerado laminar devido às características do fluido e do tubo e para a facilitação dos cálculos do             problema.
+    4) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação porém não       complexa demais para a demanda do problema.
+    5) O problema considera regime permanente.
+    6) Trocas de calor não serão consideradas.
+    7) Filtrar os parâmetros que necessitam de simulação para averiguar o problema e efetuar os cálculos, para assim não haver simulações desnecessárias.
     
 - Que hipóteses de simplificação devem ser adotadas?
 
