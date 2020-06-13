@@ -16,7 +16,13 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 
 - Qual é o objetivo do projeto?
     
-    O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação, com os dados apresentados o objetivo geral deste projeto é obter uma simulação confiável através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student e portanto averiguar através da teoria se os dados apresentados e os resultados computados nas simulações são consistentes com a realidade, além disso possui como objetivo específico a análise do  parâmetro do Fator de atrito e realizar um estudo paramétrico para definir a normalidade do cenário da instalação apresentada.
+    O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student.
+    
+    Os objetivos específicos são:
+        
+     1) Comparar os resultados de vazão e perda de carga obtidos na simulação com os resultados teóricos, para avaliar se são consistentes com a realidade.
+     2) Apresentar possibilidades de problemas caso os valores obtidos não sejam coerentes.
+     3) Analisar o parâmetro fator de atrito através de um estudo paramêtrico para definir a normalidade do cenário da instalação apresentada.
 
 - Quais são seus requisitos de solução?
 
@@ -28,13 +34,11 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 - Que hipóteses de simplificação podem ser adotadas?
 
-    1) Utilizar cálculos simples, porém eficazes para obter informações sobre o escoamento de acordo com os dados fornecidos, como por       exemplo a equação de Bernoulli e as definições de vazão volumétrica para o cálculo da velocidade do fluido.
-    2) Adotar apenas os parâmetros necessários para os cálculos. 
-    3) O escoamento será considerado laminar devido às características do fluido e do tubo e para a facilitação dos cálculos do             problema.
-    4) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação porém não       complexa demais para a demanda do problema.
-    5) O problema considera regime permanente.
-    6) Trocas de calor não serão consideradas.
-    7) Filtrar os parâmetros que necessitam de simulação para averiguar o problema e efetuar os cálculos, para assim não haver simulações desnecessárias.
+    1) O escoamento será considerado laminar devido às características do fluido e do tubo e para a facilitação dos cálculos do             problema.
+    2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação porém não       complexa demais para a demanda do problema.
+    3) O problema considera regime permanente.
+    4) Trocas de calor não serão consideradas.
+    5) Filtrar os parâmetros que necessitam de simulação para averiguar o problema e efetuar os cálculos, para assim não haver simulações desnecessárias.
     
 - Que hipóteses de simplificação devem ser adotadas?
 
@@ -50,8 +54,11 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 - Qual é o prazo de entrega do projeto?
 
     O projeto será dividido em 3 etapas: 
+    
     1- Modelagem;
+    
     2- Pré- processamento;
+    
     3- Processamento e pós-processamento.
     
     A etapa de Modelagem tem o prazo de aproximandamente uma semana até o recebimento do Feedback e a partir da efetuação das correções necessárias as etapas seguintes apresentarão novos prazos de acordo com a necessidade.
