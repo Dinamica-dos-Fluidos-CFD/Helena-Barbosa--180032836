@@ -86,6 +86,21 @@ III) Imagem 3: Desenho esquemático da modelagem do problema, elaborado no AutoC
 ![Esquemático do problema Autocad 2D](https://user-images.githubusercontent.com/62161754/83933377-3f6c4700-a77e-11ea-9e10-a04fa9279dfd.PNG)
 
 
+### 2.	Pré-Processamento:
+
+A segunda etapa deverá conter as respostas para as seguintes perguntas:
+
+- Quanto detalhado o domínio de cálculo precisa ser?
+- A geometria está adequada?
+- Que tipo de malha e método usar? Estruturada ou não-estruturada? Volumes Finitos ou Elementos Finitos?
+- Quais são as informações de entrada (Input) do problema?
+- Que escolhas devem ser feitas em relação ao processamento da solução?
+- Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão? 
+
+O projeto deverá conter nesta etapa:
+
+- Descrição do pré-processamento feito no ANSYS.
+- Imagens da malha de cálculo do problema.
 
 
 
