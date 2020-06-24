@@ -16,7 +16,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 
 - Qual é o objetivo do projeto?
     
-    O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student.
+    O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student. Como uma boa prática para Projetos em CFD para a etapa de modelagem do problema, é importante apresentar e listar objetivos específicos para melhor entendimento das necessidades do projeto e decisões tomadas posteriormente. 
     
     Os objetivos específicos são:
         
@@ -91,8 +91,17 @@ III) Imagem 3: Desenho esquemático da modelagem do problema, elaborado no AutoC
 A segunda etapa deverá conter as respostas para as seguintes perguntas:
 
 - Quanto detalhado o domínio de cálculo precisa ser?
+
+    O domínio de cálculo não necessita de um detalhamento elevado devido à baixa complexidade do problema, portanto a geometria da tubulação será feita de maneira simplificada utilizando apenas o diâmetro da tubulação e seu comprimento, como apresentado anteriormente a intenção é reproduzir uma simulação na qual os resultados possam ser observados e comparados com os cálculos teóricos para avaliar a normalidade da situação, sendo assim é importante encontrar o equilíbrio entre a demanda de tempo para os cálculos teóricos e o detalhamento da simulação do problema para que ambos estejam consistentes.
+
 - A geometria está adequada?
+
+    A tubulação em questão apresenta uma secção transversal circular com diâmetro de 40 mm e comprimento de 1000 mm, logo a geometria produzida apresenta-se adequada para o problema.  
+    
 - Que tipo de malha e método usar? Estruturada ou não-estruturada? Volumes Finitos ou Elementos Finitos?
+
+    A escolha realizada para a simulação foi a malha automática utilizando apenas o botão "generate", a malha resultada é estruturada, ou seja, apresenta um menor número de elementos 
+    
 - Quais são as informações de entrada (Input) do problema?
 - Que escolhas devem ser feitas em relação ao processamento da solução?
 - Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão? 
