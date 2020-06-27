@@ -226,4 +226,23 @@ O projeto deverá conter nesta etapa:
 - Imagens da malha de cálculo do problema.
 
 
+# 3. Processamento e Pós-Processamento:
+
+A terceira etapa deverá conter as respostas para as seguintes perguntas:
+
+- O histórico de convergência do cálculo está adequado?
+- Quanto tempo a simulação está levando para ser processada?
+- Os resíduos estão em valores aceitáveis?
+- A simulação fornece resultados qualitativos?
+- É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
+- Os resultados estão de acordo com a realidade física do escoamento?
+
+O projeto deverá conter nesta etapa:
+
+- Análise dos resultados obtidos.
+- Comparação dos resultados numéricos com os resultados analíticos de cada problema.
+- Imagens de visualização do escoamento.
+- Análise dos resultados obtidos pelo estudo paramétrico.
+
+
 
