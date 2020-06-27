@@ -145,7 +145,7 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
    ![meshing_quality_orthogonal](https://user-images.githubusercontent.com/62161754/85899079-e4090400-b7d3-11ea-9d5b-06b30a18b8f9.png)
 
     
- A partir desses valores a malha gerada foi classificada de maneira positiva, como pode ser visto no valor máximo de Dissimetria se encontra em 0,47313 e a Qualidade Ortogonal em 0,82069, classificando ambos na margem do Muito Bom nas escalas de qualidade.
+ A partir desses valores a malha gerada foi classificada de maneira positiva, como pode ser visto no valor máximo de Dissimetria se encontra em 0,47313 e o valor mínimo da Qualidade Ortogonal em 0,82069, classificando ambos na margem do Muito Bom nas escalas de qualidade.
     
     
 ## Quais são as informações de entrada (Input) do problema?
