@@ -176,17 +176,34 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
     
     ![meshing_botao_direito_face](https://user-images.githubusercontent.com/62161754/85900158-b58c2880-b7d5-11ea-90c4-a720b67d1cf3.png)
     
-    
     ![meshing_entrada](https://user-images.githubusercontent.com/62161754/85900324-0439c280-b7d6-11ea-9a40-8f5f473a6dc8.png)
 
     O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte Árvore de projeto:
     
     ![meshing_arvore](https://user-images.githubusercontent.com/62161754/85900463-419e5000-b7d6-11ea-8ede-9f8b963594e2.png)
     
-    Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer as condições de contorno 
+    Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer o Dominio Padrão do escoamento, no qual as escolhas dessa etapa do pré-processamento consistiram na definição do material como água, a pressão de referência como 1 atm, a desconsideração de trocas de calor e a caracterização do escoamento como laminar.
     
+    ![CFX-Pre_water_and_reference_pressure](https://user-images.githubusercontent.com/62161754/85911299-da46c700-b7fa-11ea-8fc2-0581659433e5.png)
     
+    ![CFX-Pre_Domain_heat_transfer](https://user-images.githubusercontent.com/62161754/85911301-dca92100-b7fa-11ea-8732-c5249705757f.png)
     
+     Consequentemente foram definidos os detalhes das condições de contorno na entrada e na saída do tubo, primeiro foram atribuidos o parâmetro de velocidade para a entrada do escoamento e a pressão estática relativa na saída.
+    
+    ![CFX-Pre_Boundary_entrada](https://user-images.githubusercontent.com/62161754/85911165-cfd7fd80-b7f9-11ea-88bc-f53fb38c7161.png)
+    
+    ![CFX-Pre_Boundary_entrada_Details_Speed](https://user-images.githubusercontent.com/62161754/85911168-d49cb180-b7f9-11ea-921e-1b49c128702d.png)
+       
+    ![CFX-Pre_Boundary_Saida](https://user-images.githubusercontent.com/62161754/85911346-1712be00-b7fb-11ea-8ed8-2d4d4e7190f5.png)
+    
+    ![CFX-Pre_Boundary_Saida_details_pressure](https://user-images.githubusercontent.com/62161754/85911349-19751800-b7fb-11ea-8c16-accfda5e3ea6.png)
+    
+    Após a conclusão dessas definições o próximo passo foi definir os controles de solução, os quais permaneceram no padrão fornecido pelo programa, finalizando a parte do pré-processamento das condições de contorno.
+    
+    ![CFX-PRE_Solver_Control_Default](https://user-images.githubusercontent.com/62161754/85911469-d2d3ed80-b7fb-11ea-8211-87c2ae69ae87.png)
+    
+    ![CFX-PRE_Solver_Control_Default - Copia](https://user-images.githubusercontent.com/62161754/85911473-d5cede00-b7fb-11ea-8564-acd189ac0581.png)
+
     
 - Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão? 
     
