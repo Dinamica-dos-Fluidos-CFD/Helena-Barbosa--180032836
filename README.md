@@ -10,7 +10,7 @@ Problema 1: Uma instalação de bombeamento tem apresentado problemas em uma se�
 - Apresentar possibilidades de problemas em caso dos valores colocados acima não estarem coerentes.
 - Usando a simulação apresentada, realizar um estudo paramétrico do fator de atrito para avaliar se o cenário acima é normal ou não para esta instalação.
 
-### 1. Modelagem: 
+# 1. Modelagem: 
 
 A primeira etapa deverá conter as respostas para as seguintes perguntas:
 
@@ -79,17 +79,19 @@ A seguir, a imagem do Sketch com cotagem do diâmetro do tubo:
 ![Design_Modeler_Cotagem_Diâmetro](https://user-images.githubusercontent.com/62161754/85886441-81583e00-b7bc-11ea-87c2-479a7a8b610a.png)
 
 
-Extrude do Sketch --> geometria final do tubo.
+
+Extrude do Sketch --> geometria final do tubo:
 
 ![Design_Modeler_Extrude](https://user-images.githubusercontent.com/62161754/85886469-8f0dc380-b7bc-11ea-9fdb-ef9cef544848.png)
 
 
-Desenho esquemático da modelagem do problema, elaborado no AutoCAD.
+
+Desenho esquemático da modelagem do problema, elaborado no AutoCAD:
 
 ![Esquemático do problema Autocad 2D](https://user-images.githubusercontent.com/62161754/83933377-3f6c4700-a77e-11ea-9e10-a04fa9279dfd.PNG)
 
 
-### 2.	Pré-Processamento:
+# 2. Pré-Processamento:
 
 A segunda etapa deverá conter as respostas para as seguintes perguntas:
 
