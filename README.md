@@ -109,7 +109,7 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
 
  A malha foi gerada automaticamente através do botão "generate":
     
-   ![meshing_cursor_generate](https://user-images.githubusercontent.com/62161754/85897209-3fd18e00-b7d0-11ea-88b7-0939e3ff7248.png)
+   ![meshing_cursor_generate](https://user-images.githubusercontent.com/62161754/85912059-d23d5600-b7ff-11ea-811f-ecf64b90e647.png)
     
   Dessa forma o programa analisa a geometria apresentada e escolhe o método mais adequado para a geração da malha, o resultado é mostrado na imagem a seguir:
     
