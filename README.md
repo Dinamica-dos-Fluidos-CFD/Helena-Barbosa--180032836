@@ -183,9 +183,21 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
     
     ![meshing_arvore](https://user-images.githubusercontent.com/62161754/85900463-419e5000-b7d6-11ea-8ede-9f8b963594e2.png)
     
-    Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer as condições de contorno
+    Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer as condições de contorno 
+    
+    
+    
     
 - Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão? 
+    
+    O prazo para realização da etapa de pré-processamento é de aproximadamente uma semana, sendo suficiente devido à complexidade da simulação.
+    
+    A capacidade computacional disponível para a análise segue abaixo:
+    
+    * Processador: Intel(R) Core(TM) i7-7500 
+    * Memória RAM: 8 GB DDR4 2133 MHz
+    * Sistema Operacional: Windows 10 
+    
 
 O projeto deverá conter nesta etapa:
 
