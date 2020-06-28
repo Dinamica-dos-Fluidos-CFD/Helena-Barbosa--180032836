@@ -22,9 +22,9 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 ### Os objetivos específicos:
         
-   1) Comparar os resultados de vazão e perda de carga obtidos na simulação com os resultados teóricos, para avaliar se são consistentes com a realidade.
-   2) Apresentar possibilidades de problemas caso os valores obtidos não sejam coerentes.
-   3) Analisar o parâmetro fator de atrito através de um estudo paramêtrico para definir a normalidade do cenário da instalação apresentada.
+   * Comparar os resultados de vazão e perda de carga obtidos na simulação com os resultados teóricos, para avaliar se são consistentes com a realidade.
+   * Apresentar possibilidades de problemas caso os valores obtidos não sejam coerentes.
+   * Analisar o parâmetro fator de atrito através de um estudo paramêtrico para definir a normalidade do cenário da instalação apresentada.
 
 ## Quais são seus requisitos de solução?
 
@@ -32,7 +32,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 ## Qual é a finalidade do projeto?
 
- O projeto tem finalidade acadêmica para demonstração e visualização do escoamento citado e do parâmetro escolhido,no caso deste projeto é o fator de atrito, através da simulação computacional e de cálculos feitos previamente utilizando a teoria de Dinâmica dos Fluidos será possível caracterizar o escoamento e confirmar os resultados obtidos por ambas as formas.
+ O projeto tem finalidade acadêmica para demonstração e visualização do escoamento citado e do parâmetro escolhido, no caso deste projeto é o fator de atrito. Através da simulação computacional e de cálculos feitos previamente utilizando a teoria de Dinâmica dos Fluidos será possível caracterizar o escoamento e confirmar os resultados obtidos por ambas as formas.
     
 ## Que hipóteses de simplificação podem ser adotadas?
 
@@ -67,9 +67,9 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 ## Há outra metodologia mais adequada do que CFD?
     
- O projeto consiste em uma análise e comparação das simulações feitas em CFD e os cálculos, portanto para o resultado sólido, os cálculos utilizando equação de Bernoulli, número de Reynolds e sua relação com o fator de atrito já são suficientes, porém por conta da natureza do projeto a simulação é importante para esta comparação, mas não necessariamente a mais adequada para apresentar os resultados pedidos.
+ O projeto consiste em uma análise e comparação das simulações feitas em CFD e os cálculos. Perante a isso, para um resultado sólido os cálculos de perda de carga, número de Reynolds e sua relação com o fator de atrito já são suficientes, porém por conta da natureza do projeto a simulação é importante para esta comparação, mas não necessariamente a mais adequada para apresentar os resultados pedidos.
 
-O projeto deverá conter nesta etapa:
+## O projeto deverá conter nesta etapa:
 
 - Desenhos CAD mostrando a geometria do problema.
 - Desenho esquemático da modelagem do problema.
@@ -93,11 +93,11 @@ Desenho esquemático da modelagem do problema, elaborado no AutoCAD:
 
 # 2. Pré-Processamento:
 
-A segunda etapa deverá conter as respostas para as seguintes perguntas:
+ A segunda etapa deverá conter as respostas para as seguintes perguntas:
 
 ## Quanto detalhado o domínio de cálculo precisa ser?
 
- O domínio de cálculo não necessita de um detalhamento elevado devido à baixa complexidade do problema, portanto a geometria da tubulação será feita de maneira simplificada utilizando apenas o diâmetro da tubulação e seu comprimento, como apresentado anteriormente a intenção é reproduzir uma simulação na qual os resultados possam ser observados e comparados com os cálculos teóricos para avaliar a normalidade da situação, sendo assim é importante encontrar o equilíbrio entre a demanda de tempo para os cálculos teóricos e o detalhamento da simulação do problema para que ambos estejam consistentes.
+ O domínio de cálculo não necessita de um detalhamento elevado devido à baixa complexidade do problem. A geometria da tubulação será feita de maneira simplificada utilizando apenas o diâmetro da tubulação e seu comprimento. Conforme apresentado anteriormente a intenção é reproduzir uma simulação na qual os resultados possam ser observados e comparados com os cálculos teóricos. O objetivo é avaliar a normalidade da situação. Neste sentido, é importante encontrar o equilíbrio entre a demanda de tempo para os cálculos teóricos e o detalhamento da simulação do problema.
 
 ## A geometria está adequada?
 
@@ -105,7 +105,7 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
     
 ## Que tipo de malha e método usar? Estruturada ou não-estruturada? Volumes Finitos ou Elementos Finitos?
 
- A escolha realizada para a simulação foi a utilização da malha automática gerada pelo próprio Ansys Student, utilizando apenas o botão "generate", a malha resultada é estruturada, ou seja, apresenta um menor número de elementos os quais não poluem a visualização e permitem um menor tempo de simulação, além disso a malha obtida permite com que os seus elementos possam alinhar-se com a direção dos gradientes do escoamento, ou seja, é possível obter uma melhor precisão nos resultados. Além disso será utilizado o método de Volumes Finitos por ser mais adequado para o ramo da mecânica dos fluidos e o mais utilizado pelos pesquisadores. 
+ A escolha realizada para a simulação foi a utilização da malha automática gerada pelo próprio Ansys Student. A malha resultada é estruturada, ou seja, apresenta um menor número de elementos, o que permite um menor tempo de simulação. Além disso a malha obtida permite que seus elementos possam alinhar-se com a direção dos gradientes do escoamento, ou seja, é possível obter uma melhor precisão nos resultados. 
     
 ## Geração da malha e sua qualidade:
 
@@ -117,7 +117,7 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
     
    ![meshing_view](https://user-images.githubusercontent.com/62161754/85896545-06e4e980-b7cf-11ea-8f64-a887b5f66310.png)
     
- Como pôde ser visto, a malha possui um alinhamento com o comprimento do tubo e com os gradientes de escoamento, porém faz-se necessária, além disso, a análise da qualidade da malha, principalmente fatores como Dissimetria (Skewness) e Qualidade Ortogonal (Orthogonal Quality), esses valores são muito importantes para a garantia de resultados confiáveis e mais precisos, os parâmetros para classificação da qualidade da malha através desses valores são:
+ Como é possivel notar, a malha possui um alinhamento com o comprimento do tubo e com os gradientes de escoamento. No entanto faz-se necessária a análise da qualidade da malha. Os principais fatores são a Dissimetria (Skewness) e a Qualidade Ortogonal (Orthogonal Quality). Estes valores são muito importantes para a garantia de resultados confiáveis e mais precisos, os parâmetros para classificação da qualidade da malha através destes valores são:
     
   Qualidade da malha de acordo com os valores de Dissimetria:
     
@@ -145,12 +145,12 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
    ![meshing_quality_orthogonal](https://user-images.githubusercontent.com/62161754/85899079-e4090400-b7d3-11ea-9d5b-06b30a18b8f9.png)
 
     
- A partir desses valores a malha gerada foi classificada de maneira positiva, como pode ser visto no valor máximo de Dissimetria se encontra em 0,47313 e o valor mínimo da Qualidade Ortogonal em 0,82069, classificando ambos na margem do Muito Bom nas escalas de qualidade.
+ A partir desses valores a malha gerada foi classificada de maneira positiva. Como pode ser visto o valor máximo de Dissimetria se encontra em 0,47313 e o valor mínimo da Qualidade Ortogonal em 0,82069, classificando ambos na margem do Muito Bom nas escalas de qualidade.
     
     
 ## Quais são as informações de entrada (Input) do problema?
 
- As informações de entrada do problema são a pressão relativa na saída, que será considerada zero, e a velocidade de entrada do problema, a qual foi calculada utilizando o valor da vazão volumétrica fornecido e a Equação da Continuidade, como pode ser visto a seguir:
+ As informações de entrada do problema são a pressão relativa na saída, que será considerada zero, e a velocidade de entrada do problema, a qual foi calculada utilizando o valor da vazão volumétrica fornecido e a Equação da Continuidade, como demonstrado a seguir:
     
   O somatório das vazões mássicas de entrada são iguais ao somatório das vazões mássicas de saída, consequentemente, o mesmo vale para a vazão volumétrica.
     
@@ -159,7 +159,7 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
 
    ![CodeCogsEqn_vazões](https://user-images.githubusercontent.com/62161754/85890830-802b0f00-b7c4-11ea-9b0c-f587844c9333.gif)
     
- A partir disso, para obter o valor da velocidade de entrada do problema, basta usar a seguinte equação, na qual a vazão volumétrica é resultada da multiplicação entre a velocidade média e a área da secção transversal do tubo, como essa aréa é constante ao longo do tubo, a velocidade média também será a mesma tanto na entrada quanto na saída.
+ A partir disso, para obter o valor da velocidade de entrada do problema é necessário usar a equação a seguir, na qual a vazão volumétrica é resultada da multiplicação entre a velocidade média e a área da secção transversal do tubo. Como a aréa é constante ao longo do tubo, a velocidade média também será a mesma na entrada e na saída.
     
    ![CodeCogsEqn_vazão_volum](https://user-images.githubusercontent.com/62161754/85891295-32fb6d00-b7c5-11ea-9acb-d221bcd8ca1e.gif)
     
@@ -172,7 +172,7 @@ A segunda etapa deverá conter as respostas para as seguintes perguntas:
     
 ## Que escolhas devem ser feitas em relação ao processamento da solução?
 
- Após a escolha da malha foi feito o estabelecimento das regiões que receberão as condições de contorno, ou seja, onde será a entrada e a saída do escoamento. Primeiramente foi necessário escolher as faces do sólido, utilizando o recurso a seguir:
+ Após a escolha da malha, foi feito o estabelecimento das regiões que receberão as condições de contorno, ou seja, onde será a entrada e a saída do escoamento. Primeiramente foi necessário escolher as faces do sólido, utilizando o recurso a seguir:
     
    ![meshing_select_face](https://user-images.githubusercontent.com/62161754/85899984-5c23f980-b7d5-11ea-859c-b89ee906fc9c.png)
     
@@ -186,13 +186,13 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
     
    ![meshing_arvore](https://user-images.githubusercontent.com/62161754/85900463-419e5000-b7d6-11ea-8ede-9f8b963594e2.png)
     
- Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer o Dominio Padrão do escoamento, no qual as escolhas dessa etapa do pré-processamento consistiram na definição do material como água, a pressão de referência como 1 atm, a desconsideração de trocas de calor e a caracterização do escoamento como laminar.
+ Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer o Dominio Padrão do escoamento, no qual as escolhas consistiram na definição do material como água, a pressão de referência como 1 atm, a desconsideração de trocas de calor e a caracterização do escoamento como laminar.
     
    ![CFX-Pre_water_and_reference_pressure](https://user-images.githubusercontent.com/62161754/85911299-da46c700-b7fa-11ea-8fc2-0581659433e5.png)
     
    ![CFX-Pre_Domain_heat_transfer](https://user-images.githubusercontent.com/62161754/85911301-dca92100-b7fa-11ea-8732-c5249705757f.png)
     
-  Consequentemente foram definidos os detalhes das condições de contorno na entrada e na saída do tubo, primeiro foram atribuidos o parâmetro de velocidade para a entrada do escoamento e a pressão estática relativa na saída.
+  Consequentemente foram definidos os detalhes das condições de contorno na entrada e na saída do tubo, primeiro foram atribuídos o parâmetro de velocidade para a entrada do escoamento e a pressão estática relativa na saída.
     
    ![CFX-Pre_Boundary_entrada](https://user-images.githubusercontent.com/62161754/85911165-cfd7fd80-b7f9-11ea-88bc-f53fb38c7161.png)
     
@@ -220,7 +220,7 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
    * Sistema Operacional: Windows 10 
     
 
-O projeto deverá conter nesta etapa:
+## O projeto deverá conter nesta etapa:
 
 - Descrição do pré-processamento feito no ANSYS.
 - Imagens da malha de cálculo do problema.
@@ -230,14 +230,14 @@ O projeto deverá conter nesta etapa:
 
 A terceira etapa deverá conter as respostas para as seguintes perguntas:
 
-- O histórico de convergência do cálculo está adequado?
-- Quanto tempo a simulação está levando para ser processada?
-- Os resíduos estão em valores aceitáveis?
-- A simulação fornece resultados qualitativos?
-- É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
-- Os resultados estão de acordo com a realidade física do escoamento?
+## O histórico de convergência do cálculo está adequado?
+## Quanto tempo a simulação está levando para ser processada?
+## Os resíduos estão em valores aceitáveis?
+## A simulação fornece resultados qualitativos?
+## É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
+## Os resultados estão de acordo com a realidade física do escoamento?
 
-O projeto deverá conter nesta etapa:
+## O projeto deverá conter nesta etapa:
 
 - Análise dos resultados obtidos.
 - Comparação dos resultados numéricos com os resultados analíticos de cada problema.
