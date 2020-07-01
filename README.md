@@ -18,9 +18,9 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
 ### Objetivo geral:
 
- O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student. Como uma boa prática para Projetos em CFD para a etapa de modelagem do problema, é importante apresentar e listar objetivos específicos para melhor entendimento das necessidades do projeto e decisões tomadas posteriormente. 
+ O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student para auxiliar no estudo paramétrico. 
     
-### Os objetivos específicos:
+### Objetivos específicos:
         
    * Comparar os resultados de vazão e perda de carga obtidos na simulação com os resultados teóricos, para avaliar se são consistentes com a realidade.
    * Apresentar possibilidades de problemas caso os valores obtidos não sejam coerentes.
