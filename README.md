@@ -37,7 +37,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 ## Que hipóteses de simplificação podem ser adotadas?
 
   1) O escoamento será considerado laminar devido às características do fluido e do tubo e para a facilitação dos cálculos do             problema.
-  2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação porém não       complexa demais para a demanda do problema.
+  2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação, porém, não       complexa demais para a demanda do problema.
   3) O problema considera regime permanente.
   4) Trocas de calor não serão consideradas.
   5) Filtrar os parâmetros que necessitam de simulação para averiguar o problema e efetuar os cálculos, para assim não haver simulações desnecessárias.
@@ -45,7 +45,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 ## Que hipóteses de simplificação devem ser adotadas?
 
   1) O escoamento será considerado laminar devido às características do fluido e do tubo.
-  2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação porém não       complexa demais para a demanda do problema.
+  2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação, porém, não       complexa demais para a demanda do problema.
   3) O problema considera regime permanente.
   4) Trocas de calor não serão consideradas.
     
