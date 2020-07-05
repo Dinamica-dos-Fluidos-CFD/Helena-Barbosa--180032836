@@ -63,7 +63,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
    3- Processamento e pós-processamento: 1 semana;
     
-  A etapa de Modelagem, assim como as demais etapas tem o prazo de aproximandamente uma semana até o recebimento do Feedback e a partir da efetuação das correções necessárias as etapas seguintes apresentarão novos prazos de acordo com a necessidade.
+  A etapa de Modelagem, assim como as demais etapas, tem o prazo de aproximandamente uma semana até o recebimento do Feedback e a partir da efetuação das correções necessárias as etapas seguintes apresentarão novos prazos de acordo com a necessidade.
     
 ## Há outra metodologia mais adequada do que CFD?
     
@@ -97,7 +97,7 @@ Desenho esquemático da modelagem do problema, elaborado no AutoCAD:
 
 ## Quanto detalhado o domínio de cálculo precisa ser?
 
- O domínio de cálculo não necessita de um detalhamento elevado devido à baixa complexidade do problem. A geometria da tubulação será feita de maneira simplificada utilizando apenas o diâmetro da tubulação e seu comprimento. Conforme apresentado anteriormente a intenção é reproduzir uma simulação na qual os resultados possam ser observados e comparados com os cálculos teóricos. O objetivo é avaliar a normalidade da situação. Neste sentido, é importante encontrar o equilíbrio entre a demanda de tempo para os cálculos teóricos e o detalhamento da simulação do problema.
+ O domínio de cálculo não necessita de um detalhamento elevado devido à baixa complexidade do problema. A geometria da tubulação será feita de maneira simplificada utilizando apenas o diâmetro da tubulação e seu comprimento. Conforme apresentado anteriormente a intenção é reproduzir uma simulação na qual os resultados possam ser observados e comparados com os cálculos teóricos. O objetivo é avaliar a normalidade da situação. Neste sentido, é importante encontrar o equilíbrio entre a demanda de tempo para os cálculos teóricos e o detalhamento da simulação do problema.
 
 ## A geometria está adequada?
 
@@ -105,7 +105,7 @@ Desenho esquemático da modelagem do problema, elaborado no AutoCAD:
     
 ## Que tipo de malha e método usar? Estruturada ou não-estruturada? Volumes Finitos ou Elementos Finitos?
 
- A escolha realizada para a simulação foi a malha automática gerada pelo próprio Ansys Student. A malha resultada é estruturada, ou seja, apresenta um menor número de elementos, o que permite um menor tempo de simulação. Além disso a malha obtida permite que seus elementos possam alinhar-se com a direção dos gradientes do escoamento, ou seja, é possível obter uma melhor precisão nos resultados.
+ A escolha realizada para a simulação foi a malha automática gerada pelo próprio Ansys Student. A malha resultada é estruturada, ou seja, apresenta um menor número de elementos, permitindo um menor tempo de simulação. Além disso, a malha obtida permite que seus elementos possam alinhar-se com a direção dos gradientes do escoamento, ou seja, é possível obter uma melhor precisão nos resultados.
  
  O método utilizado será o MVF (Método dos Volumes Finitos) por ser mais adequado para a Mecânica dos Fluidos. O método no software se baseia em, de forma geral, decompor o domínio em volumes de controle na malha computacional, utilizar as equações integrais de conservação para cada volume de controle, aproximar em valores numéricos as integrais, aproximar os valores das variáveis nas faces e as derivadas com a informação das variáveis nodais e por último montar e solucionar o sistema algébrico obtido.
     
