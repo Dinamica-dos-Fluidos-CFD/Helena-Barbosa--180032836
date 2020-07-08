@@ -358,9 +358,36 @@ Um escoamento pode ser classificado em regime laminar, de transição ou turbule
    * Região de turbulência: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
    
 
-Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o fator de atrito depende apenas do Número de Reynolds, já nos demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)). 
+Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o fator de atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
+) depende apenas do Número de Reynolds:
 
-A rugosidade varia de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. Para o estudo paramétrico do problema em questão serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros:
+![CodeCogsEqn_atrito_laminar](https://user-images.githubusercontent.com/62161754/86968814-2969f180-c143-11ea-9bd0-c71eec996e61.gif)
+
+
+Para os demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)),podendo variar de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. A rugosidade absoluta possui unidade de medida de comprimento e a rugosidade relativa é adimensional.
+
+Para os escoamentos turbulentos a expressão mais usual para o Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif)
+) é a de Colebrook.
+
+![CodeCogsEqn_Colebrook](https://user-images.githubusercontent.com/62161754/86969679-8914cc80-c144-11ea-8267-5799699d6e67.gif)
+
+É possível notar que a equação de Colebrook é implícita em ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif) , sendo possível calcular através de Softwares para cálculo numérico ou realizando algumas iterações, devido à estabilidade da expressão.
+
+Outra expressão aceita para casos onde ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86970337-98e0e080-c145-11ea-971c-e55cd92bb3e2.gif) > 3000 é a equação de Haaland.
+
+![CodeCogsEqn_Haaland](https://user-images.githubusercontent.com/62161754/86969681-89ad6300-c144-11ea-9e54-249641a9bb8e.gif)
+
+A equação de Haaland é explícita, porém os resultandos diferem cerca de 2% dos resultados obtidos através da equação de Colebrook.
+
+Além disso, para casos em que a rugosidade da tubulação é desconsiderada, ou seja, a superfície é considerada lisa, outra equação aceita é a de Prandtl.
+
+![CodeCogsEqn_Prandtl](https://user-images.githubusercontent.com/62161754/86971333-5f10d980-c147-11ea-837d-426760d69145.gif)
+
+Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito, Número de Reynolds e a rugosidade relativa.
+
+![Diagrama_de_Moody](https://user-images.githubusercontent.com/62161754/86972739-cb8cd800-c149-11ea-94d6-74c97155d250.jpg)
+
+Para o estudo paramétrico do problema em questão serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros:
 
 | Material | Rugosidade absoluta (m) |
 |:-----:|:--------------------:|
@@ -372,10 +399,6 @@ A rugosidade varia de acordo com o material da tubulação, a maneira como foi f
 | PVC, plásticos em geral  | 0,0000015 |
 | "liso"  | - |
  
-
-Dessa forma, os cálculos 
-
-
 
 
 ### Análise dos resultados obtidos:
