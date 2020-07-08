@@ -254,9 +254,28 @@ Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis. A malha a
 
 ## Resultados:
 
-Após o processamento efetuado pelo programa, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foram inseridos 
+Após o processamento efetuado pelo programa, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
+
+![CFD-Post_Location_Plane_Cursor](https://user-images.githubusercontent.com/62161754/86946078-3aedd200-c120-11ea-8f6e-667c9de0e188.png)
+
+![CFD-Post_Plane1_config](https://user-images.githubusercontent.com/62161754/86946095-417c4980-c120-11ea-9e27-c93c07ab9299.png)
+
+Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a geração dos gráficos.
+
+![CFD-Post_Location_line1](https://user-images.githubusercontent.com/62161754/86947408-214d8a00-c122-11ea-8bd8-cf40edbb85db.png)
+
+![CFD-Post_Line1](https://user-images.githubusercontent.com/62161754/86947453-2e6a7900-c122-11ea-9bb2-e0a73783594a.png)
+
+![CFD-Post_Line2](https://user-images.githubusercontent.com/62161754/86947461-2f9ba600-c122-11ea-9b3f-531a0f005f31.png)
+
 
 ### A simulação fornece resultados qualitativos?
+
+Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
+
+   * A inserção de vetores de velocidade do escoamento, contornos de velocidade e pressão e seus respectivos gráficos. 
+   
+   
 ### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
 ### Estudo paramétrico do Fator de Atrito:
 ### Análise dos resultados obtidos:
