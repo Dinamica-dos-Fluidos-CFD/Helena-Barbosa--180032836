@@ -385,7 +385,7 @@ Além disso, para casos em que a rugosidade da tubulação é desconsiderada, ou
 
 Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito, Número de Reynolds e a rugosidade relativa.
 
-![Diagrama_de_Moody](https://user-images.githubusercontent.com/62161754/86972739-cb8cd800-c149-11ea-94d6-74c97155d250.jpg)
+![Diagrama_de_Moody_2](https://user-images.githubusercontent.com/62161754/86973362-d72cce80-c14a-11ea-8241-d6e45652dcce.jpg)
 
 Para o estudo paramétrico do problema em questão serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros:
 
