@@ -295,7 +295,10 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    ![CFD-Post_Pressure_contour_15](https://user-images.githubusercontent.com/62161754/86953335-ad63af80-c12a-11ea-9c7c-5303db7fcd39.png)
    
    
-   * Gráfico de perfil de velocidade com 100 amostras:
+   * Gráfico de perfil de velocidade com 100 amostras, gerado pela ferramenta "chart":
+   
+   ![CFD-Post_Chart_cursor](https://user-images.githubusercontent.com/62161754/86973946-cc266e00-c14b-11ea-9482-76d4bed07feb.png)
+   
    
    ![CFD-Post_Chart2_Velocity](https://user-images.githubusercontent.com/62161754/86952921-14cd2f80-c12a-11ea-9c84-73b5d9b82505.png)
    
