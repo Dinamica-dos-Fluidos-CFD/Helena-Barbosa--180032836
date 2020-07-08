@@ -235,10 +235,26 @@ A terceira etapa deverá conter as respostas para as seguintes perguntas:
 ## Simulação:
 
 ### O histórico de convergência do cálculo está adequado?
+
+A etapa do processamento da solução no Ansys fornece o gráfico de convergência da simulação, sendo possível observá-la a seguir:
+
+![Solver_Manager_Time - Copia](https://user-images.githubusercontent.com/62161754/86939287-c31ba980-c117-11ea-88ce-07c9acb9850a.png)
+
+Como pode ser visto, o histórico de convergência encontra-se adequado devido ao fato de  todas as curvas estarem direcionadas para baixo.
+
 ### Quanto tempo a simulação está levando para ser processada?
+
+A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade apresentada pela geometria adotada e da malha utilizada.
+
+![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86940226-ec890500-c118-11ea-91e3-d339c313a052.png)
+
 ### Os resíduos estão em valores aceitáveis?
 
+Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis. A malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom, permitindo resultados potencialmente condizentes para os requisitos de solução apresentados.
+
 ## Resultados:
+
+Após o processamento efetuado pelo programa, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foram inseridos 
 
 ### A simulação fornece resultados qualitativos?
 ### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
