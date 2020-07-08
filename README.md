@@ -260,7 +260,7 @@ Após o processamento efetuado pelo programa, utilizou-se o pacote CFD-Post para
 
 ![CFD-Post_Plane1_config](https://user-images.githubusercontent.com/62161754/86946095-417c4980-c120-11ea-9e27-c93c07ab9299.png)
 
-Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a geração dos gráficos.
+Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a geração dos gráficos de perfil de velocidade e de perda de carga.
 
 ![CFD-Post_Location_line1](https://user-images.githubusercontent.com/62161754/86947408-214d8a00-c122-11ea-8bd8-cf40edbb85db.png)
 
@@ -273,10 +273,36 @@ Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a 
 
 Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
 
-   * A inserção de vetores de velocidade do escoamento, contornos de velocidade e pressão e seus respectivos gráficos. 
+   * Vetores de velocidade do escoamento com 15 amostras, inseridos através da ferramenta "Insert Vector":
+   
+   ![CFD-Post_Vector1](https://user-images.githubusercontent.com/62161754/86953049-41814700-c12a-11ea-91a4-97d8e922a5a3.png)
+   
+   ![CFD-Post_Vector2_simulation](https://user-images.githubusercontent.com/62161754/86952853-f9622480-c129-11ea-8138-6da759c10a01.png)
+
+   * Contorno de perfil de velocidade com 15 amostras, utilizando a ferramenta "Insert Contour":
+   
+   ![CFD-Post_Contour_cursor](https://user-images.githubusercontent.com/62161754/86953204-77263000-c12a-11ea-8a9f-cb9b4ae9f05c.png)
+   
+   ![CFD-Post_Velocity_contour_15](https://user-images.githubusercontent.com/62161754/86952897-0bdc5e00-c12a-11ea-8a06-bdcfd210b33a.png)
+   
+   * Contorno de pressão com 15 amostras:
+   
+   ![CFD-Post_Pressure_contour_15](https://user-images.githubusercontent.com/62161754/86953335-ad63af80-c12a-11ea-9c7c-5303db7fcd39.png)
+   
+   
+   * Gráfico de perfil de velocidade com 100 amostras:
+   
+   ![CFD-Post_Chart2_Velocity](https://user-images.githubusercontent.com/62161754/86952921-14cd2f80-c12a-11ea-9c84-73b5d9b82505.png)
+   
+   * Gráfico de perda de carga, apresentando a perda de pressão de acordo com o escoamento, da entrada para a saída respectivamente:
+   
+   ![CFD-Post_Chart1_Pressure](https://user-images.githubusercontent.com/62161754/86952932-172f8980-c12a-11ea-91de-cac1c165c13c.png)
    
    
 ### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
+
+
+
 ### Estudo paramétrico do Fator de Atrito:
 ### Análise dos resultados obtidos:
 ### Os resultados estão de acordo com a realidade física do escoamento?
