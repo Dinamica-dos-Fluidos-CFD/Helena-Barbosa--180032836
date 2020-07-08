@@ -322,6 +322,48 @@ A seguir os valores de Perda de Carga e Número de Reynolds, fornecidos pelo Sof
 
 ### Estudo paramétrico:
 
+Em escoamentos podem ocorrem diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, ou seja, em qual região ele se encontra, tal análise depende diretamente do cálculo do Número de Reynolds:
+
+![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
+
+Onde ![CodeCogsEqn_rho](https://user-images.githubusercontent.com/62161754/86963801-734ed980-c13b-11ea-8607-2d63465484e0.gif) , ![CodeCogsEqn_v](https://user-images.githubusercontent.com/62161754/86963546-13f0c980-c13b-11ea-8050-63bfec6b6913.gif) , ![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif) , ![CodeCogsEqn_mu](https://user-images.githubusercontent.com/62161754/86963562-1b17d780-c13b-11ea-9aae-fcf80ca984a6.gif) respectivamente são:
+
+   * Massa específica da água:
+   
+   ![CodeCogsEqn_massaesp](https://user-images.githubusercontent.com/62161754/86963907-a6916880-c13b-11ea-83b3-5941cf2ef37d.gif)
+   
+   * Velocidade: 
+   
+   ![CodeCogsEqn_velocity](https://user-images.githubusercontent.com/62161754/86963920-ac874980-c13b-11ea-805d-930e8f540b97.gif)
+   
+   * Diâmetro do tubo:
+   
+   ![CodeCogsEqn_diametro](https://user-images.githubusercontent.com/62161754/86963930-b01ad080-c13b-11ea-8039-c53a07348e92.gif)
+   
+   * Viscosidade dinâmica da água:
+   
+   ![CodeCogsEqn_viscosity](https://user-images.githubusercontent.com/62161754/86963953-b8730b80-c13b-11ea-8a1e-b18ad5b20f7a.gif)
+
+Logo:
+
+![CodeCogsEqn_n_reynolds_numbers](https://user-images.githubusercontent.com/62161754/86964204-1142a400-c13c-11ea-8a87-2284f859344a.gif)
+
+![CodeCogsEqn_n_reynolds_result](https://user-images.githubusercontent.com/62161754/86964268-333c2680-c13c-11ea-8817-ed3551b4bcc2.gif)
+
+   
+   
+
+
+Um escoamento pode ser classificado em regime laminar, de transição ou turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+
+   * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
+   * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
+   * Regime turbulento: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
+   
+
+   
+
+
 
 
 
