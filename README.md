@@ -349,20 +349,31 @@ Logo:
 ![CodeCogsEqn_n_reynolds_numbers](https://user-images.githubusercontent.com/62161754/86964204-1142a400-c13c-11ea-8a87-2284f859344a.gif)
 
 ![CodeCogsEqn_n_reynolds_result](https://user-images.githubusercontent.com/62161754/86964268-333c2680-c13c-11ea-8817-ed3551b4bcc2.gif)
-
    
-   
-
 
 Um escoamento pode ser classificado em regime laminar, de transição ou turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
 
-   * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
-   * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
-   * Regime turbulento: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
+   * Região laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
+   * Região de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
+   * Região de turbulência: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
    
 
-   
+Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o fator de atrito depende apenas do Número de Reynolds, já nos demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)). 
 
+A rugosidade varia de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. Para o estudo paramétrico do problema em questão serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros:
+
+| Material | Rugosidade absoluta (m) |
+|:-----:|:--------------------:|
+| Aço galvanizado com costura  | 0,00015   |
+| Aço galvanizado sem costura  | 0,00006|
+| Ferro fundido novo  | 0,00025 |
+| Ferro fundido com leve oxidação  | 0,0003 |
+| Ferro fundido velho  | 0,003 |
+| PVC, plásticos em geral  | 0,0000015 |
+| "liso"  | - |
+ 
+
+Dessa forma, os cálculos 
 
 
 
@@ -371,6 +382,8 @@ Um escoamento pode ser classificado em regime laminar, de transição ou turbule
 
 
 ### Os resultados estão de acordo com a realidade física do escoamento?
+
+
 
 ## O projeto deverá conter nesta etapa:
 
