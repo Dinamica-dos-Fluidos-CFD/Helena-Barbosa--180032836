@@ -246,7 +246,7 @@ Como pode ser visto, o histórico de convergência encontra-se adequado devido a
 
 A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade apresentada pela geometria adotada e da malha utilizada.
 
-![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86940226-ec890500-c118-11ea-91e3-d339c313a052.png)
+![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86954231-ff590500-c12b-11ea-9f5d-69192250f28b.png)
 
 ### Os resíduos estão em valores aceitáveis?
 
@@ -254,11 +254,12 @@ Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis. A malha a
 
 ## Resultados:
 
-Após o processamento efetuado pelo programa, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
+Após o processamento efetuado pelo Software, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
 
 ![CFD-Post_Location_Plane_Cursor](https://user-images.githubusercontent.com/62161754/86946078-3aedd200-c120-11ea-8f6e-667c9de0e188.png)
 
 ![CFD-Post_Plane1_config](https://user-images.githubusercontent.com/62161754/86946095-417c4980-c120-11ea-9e27-c93c07ab9299.png)
+
 
 Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a geração dos gráficos de perfil de velocidade e de perda de carga.
 
@@ -278,12 +279,16 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    ![CFD-Post_Vector1](https://user-images.githubusercontent.com/62161754/86953049-41814700-c12a-11ea-91a4-97d8e922a5a3.png)
    
    ![CFD-Post_Vector2_simulation](https://user-images.githubusercontent.com/62161754/86952853-f9622480-c129-11ea-8138-6da759c10a01.png)
+   
+   
 
    * Contorno de perfil de velocidade com 15 amostras, utilizando a ferramenta "Insert Contour":
    
    ![CFD-Post_Contour_cursor](https://user-images.githubusercontent.com/62161754/86953204-77263000-c12a-11ea-8a9f-cb9b4ae9f05c.png)
    
    ![CFD-Post_Velocity_contour_15](https://user-images.githubusercontent.com/62161754/86952897-0bdc5e00-c12a-11ea-8a06-bdcfd210b33a.png)
+   
+   
    
    * Contorno de pressão com 15 amostras:
    
@@ -294,17 +299,35 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
    ![CFD-Post_Chart2_Velocity](https://user-images.githubusercontent.com/62161754/86952921-14cd2f80-c12a-11ea-9c84-73b5d9b82505.png)
    
+   
+   
    * Gráfico de perda de carga, apresentando a perda de pressão de acordo com o escoamento, da entrada para a saída respectivamente:
    
    ![CFD-Post_Chart1_Pressure](https://user-images.githubusercontent.com/62161754/86952932-172f8980-c12a-11ea-91de-cac1c165c13c.png)
    
    
+   
 ### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
 
+A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores de Perda de Carga e do Número de Reynolds de acordo com diferentes valores de velocidade do escoamento. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
+
+A seguir os valores de Perda de Carga e Número de Reynolds, fornecidos pelo Software para valores distintos de velocidade de escoamento:
+
+| Velocidade (m/s) | Perda de Carga (Pa)  | Número de Reynolds | 
+|:-----:|:--------------------:|:----------------:|
+| 0,02  | 0,42433   | 893,53 |
+| 0,05  | 1,1608| 2236,2 |
+| 0,0795  | 1,8326 | 3556,5 | 
+| 0,1  | 2,4963 | 4474,1 |
+
+### Estudo paramétrico:
 
 
-### Estudo paramétrico do Fator de Atrito:
+
+
 ### Análise dos resultados obtidos:
+
+
 ### Os resultados estão de acordo com a realidade física do escoamento?
 
 ## O projeto deverá conter nesta etapa:
