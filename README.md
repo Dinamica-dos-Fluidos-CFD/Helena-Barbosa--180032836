@@ -311,16 +311,8 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
 ### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
 
-A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores de Perda de Carga e do Número de Reynolds de acordo com diferentes valores de velocidade média. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
+A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores para o Número de Reynolds de acordo com diferentes valores de velocidade média e da Perda de carga. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
 
-
-   #### Perda de carga:
-   
-   A seguir encontram-se o valor simulado de Perda de Carga de acordo com a velocidade de escoamento e a comparação com o valor da queda de pressão mensurada na tubulação:
-
-| Perda de Carga (Pa)  | Valor medido na tubulação (Pa)  | 
-|:--------------------:|:--------------------:|
-| 1,8326 | 2 | 
 
    #### Número de Reynolds:
    
@@ -361,6 +353,16 @@ Logo:
    | 0,05 | 2237,93 | 2236,2 | 0,0773% |
    | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
    | 0,1 | 4475,86 | 4474,1 | 0,0393% |
+   
+   
+   #### Perda de carga:
+   
+   A seguir encontram-se o valor simulado de Perda de Carga de acordo com a velocidade de escoamento e a comparação com o valor da queda de pressão mensurada na tubulação:
+
+| Perda de Carga (Pa)  | Valor medido na tubulação (Pa)  | 
+|:--------------------:|:--------------------:|
+| 1,8326 | 2,0000 | 
+
 
 ### Estudo paramétrico:
 
