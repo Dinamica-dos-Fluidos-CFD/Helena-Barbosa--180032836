@@ -353,7 +353,7 @@ Logo:
 ![CodeCogsEqn_n_reynolds_result](https://user-images.githubusercontent.com/62161754/86964268-333c2680-c13c-11ea-8817-ed3551b4bcc2.gif)
    
    
- Com os cálculos realizados, foi elaborada uma tabela com as comparações entre os valores para o Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) calculados e os valores obtidos pela simulação de acordo com a mudança de velocidades:
+ Com os cálculos realizados, foi elaborada uma tabela com as comparações entre os valores para o Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) calculados e os valores obtidos pela simulação de acordo com a mudança de velocidade:
    
    | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
    |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
@@ -377,7 +377,7 @@ Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No 
 ![CodeCogsEqn_atrito_laminar](https://user-images.githubusercontent.com/62161754/86968814-2969f180-c143-11ea-9bd0-c71eec996e61.gif)
 
 
-Para os demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)),podendo variar de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. A rugosidade absoluta possui unidade de medida de comprimento e a rugosidade relativa é adimensional.
+Para os demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)), podendo variar de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. A rugosidade absoluta possui unidade de medida de comprimento e a rugosidade relativa é adimensional.
 
 Para os escoamentos turbulentos a expressão mais usual para o Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif)
 ) é a de Colebrook.
@@ -400,7 +400,7 @@ Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico
 
 ![Diagrama_de_Moody_2](https://user-images.githubusercontent.com/62161754/86973362-d72cce80-c14a-11ea-8241-d6e45652dcce.jpg)
 
-Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de Reynolds, pode variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a influência do tipo de material da tubulação nos valores do Fator de Atrito.
+Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de Reynolds, pode variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a influência do tipo de material da tubulação e a velocidade do fluido, nos valores do Fator de Atrito.
 
 | Material | Rugosidade absoluta (m) |
 |:-----:|:--------------------:|
@@ -413,7 +413,8 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
 | "liso"  | 0 |
  
  
-   1) Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através dos valores da simulação para:
+   * Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através dos valores da simulação para:
+   
    ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
    
    | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
@@ -421,7 +422,10 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
    | 0,07149480 | 0,071626023 | 0,1832% |
    
    
-   2) ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
+
+
+
+   * ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
    
    | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
@@ -436,7 +440,7 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
    
    
    
-   3) ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
+   * ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
    
    | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
@@ -451,7 +455,7 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
   
   
   
-   4) ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
+   * ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
 
   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
