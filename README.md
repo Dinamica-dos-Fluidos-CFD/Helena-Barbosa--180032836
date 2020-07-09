@@ -357,12 +357,14 @@ Logo:
    
    #### Perda de carga:
    
-   A perda de carga aferida 
-   A seguir encontram-se o valor simulado de Perda de Carga de acordo com a velocidade de escoamento e a comparação com o valor da queda de pressão mensurada na tubulação:
+   A perda de carga (![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif)) mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação.
 
-| Perda de Carga (Pa)  | Valor medido na tubulação (Pa)  | 
+| Velocidade (m/s) | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) simulado |  
 |:--------------------:|:--------------------:|
-| 1,8326 | 2,0000 | 
+| 0,02 | 0,42433 |
+| 0,05 | 1,1608 |
+| 0,0795 | 1,8326 |
+| 0,1 | 2,4963 |
 
 
 ### Estudo paramétrico:
@@ -425,7 +427,7 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
    | 0,07149480 | 0,071626023 | 0,1832% |
    
    
-
+   
 
 
    * ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
@@ -473,10 +475,20 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
 
 
 
-### Análise dos resultados obtidos:
+### Análise dos resultados obtidos no estudo paramétrico:
+
+A partir do resultados apresentados é possível notar que, à medida que ocorre o aumento da velocidade média do escoamento e do número de Reynolds, os valores do Fator de Atrito decrescem, quando isso ocorre a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim os elementos de rugosidade partem a emergir através desta camada, tornando o efeito da rugosidade importante para esses casos. Ou seja, assim como foi mencionado anteriormente, quando o escoamento passa a apresentar comportanto de regime turbulento, o Fator de Atrito não depende mais apenas do Número de Reynolds, mas também da rugosidade. Também observa-se que quando o valor da rugosidade absoluta aumenta, para o mesmo tubo circular com a mesma área de secção transversal, o valor do Fator de Atrito também aumenta.
+
+Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de materiais possuem valores de rugosidade maiores e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menores e causam efeitos menores no Fator de Atrito. Comparando os valores de rugosidade para o mesmo material porém produzidos de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal, dessa maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto possui um valor de rugosidade mais elevado, resultando em valores maiores para o Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, resultando em uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação perante os valores de rugosidade e Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito.
 
 
 ### Os resultados estão de acordo com a realidade física do escoamento?
+
+
+#### Número de Reynolds:
+
+#### Fator de Atrito:
+
 
 
 
