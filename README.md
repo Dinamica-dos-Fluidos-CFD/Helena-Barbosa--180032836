@@ -10,31 +10,29 @@ Problema 1: Uma instalação de bombeamento tem apresentado problemas em uma se�
 - Apresentar possibilidades de problemas em caso dos valores colocados acima não estarem coerentes.
 - Usando a simulação apresentada, realizar um estudo paramétrico do fator de atrito para avaliar se o cenário acima é normal ou não para esta instalação.
 
-# 1. Modelagem: 
+# 1. Modelagem
 
-A primeira etapa deverá conter as respostas para as seguintes perguntas:
-
-## Qual é o objetivo do projeto?
+## Objetivos
     
-### Objetivo geral:
+### Objetivo geral
 
- O projeto consiste em analisar a instalação de bombeamento apontada no Problema 1 a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student para auxiliar no estudo paramétrico. 
+ O projeto consiste em analisar a instalação de bombeamento apontada no problema, a qual apresenta problemas em uma determinada seção da tubulação. O objetivo geral deste projeto é obter uma simulação do tubo em questão através da Dinâmica dos Fluidos Computacional do problema, utilizando o Software Ansys Student para auxiliar no estudo paramétrico. 
     
-### Objetivos específicos:
+### Objetivos específicos
         
    * Comparar os resultados de vazão e perda de carga obtidos na simulação com os resultados teóricos, para avaliar se são consistentes com a realidade.
    * Apresentar possibilidades de problemas caso os valores obtidos não sejam coerentes.
    * Analisar o parâmetro fator de atrito através de um estudo paramêtrico para definir a normalidade do cenário da instalação apresentada.
 
-## Quais são seus requisitos de solução?
+## Requisitos de solução
 
  O requisito de solução do Projeto de CFD é o fator de atrito ou o seu cálculo por meio dos parâmetros determinados pela simulação, tais como a velocidade do escoamento, o diâmetro do tubo na seção mencionada, a viscosidade do fluido e a sua massa específica.    
     
-## Qual é a finalidade do projeto?
+## Finalidade do projeto
 
  O projeto tem finalidade acadêmica para demonstração e visualização do escoamento citado e do parâmetro escolhido, no caso deste projeto é o fator de atrito. Através da simulação computacional e de cálculos feitos previamente utilizando a teoria de Dinâmica dos Fluidos será possível caracterizar o escoamento e confirmar os resultados obtidos por ambas as formas.
     
-## Que hipóteses de simplificação podem ser adotadas?
+## Hipóteses de simplificação que podem ser adotadas
 
   1) O escoamento será considerado laminar devido às características do fluido e do tubo e para a facilitação dos cálculos do             problema.
   2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação, porém, não       complexa demais para a demanda do problema.
@@ -42,18 +40,18 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
   4) Trocas de calor não serão consideradas.
   5) Filtrar os parâmetros que necessitam de simulação para averiguar o problema e efetuar os cálculos, para assim não haver simulações desnecessárias.
     
-## Que hipóteses de simplificação devem ser adotadas?
+## Hipóteses de simplificação que devem ser adotadas
 
   1) O escoamento será considerado laminar devido às características do fluido e do tubo.
   2) A geometria do tubo é considerada simples, possibilitando a criação de uma malha boa e fiel para análise e simulação, porém, não       complexa demais para a demanda do problema.
   3) O problema considera regime permanente.
   4) Trocas de calor não serão consideradas.
     
-## Qual é a precisão requerida nos resultados do projeto?
+## Precisão requerida nos resultados do projeto
 
  Devido ao projeto possuir um formato não muito complexo e ser caracterizado como um projeto acadêmico para simulação e comparação de dados, a precisão necessária será definida através dos cálculos e será o suficiente para a avaliação do problema.
     
-## Qual é o prazo de entrega do projeto?
+## Prazo de entrega do projeto
 
   O projeto será dividido em 3 etapas: 
     
@@ -69,12 +67,9 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
     
  O projeto consiste em uma análise e comparação das simulações feitas em CFD e os cálculos. Perante a isso, para um resultado sólido os cálculos de perda de carga, número de Reynolds e sua relação com o fator de atrito já são suficientes, porém por conta da natureza do projeto a simulação é importante para esta comparação, mas não necessariamente a mais adequada para apresentar os resultados pedidos.
 
-## O projeto deverá conter nesta etapa:
+## Imagens da modelagem do projeto
 
-- Desenhos CAD mostrando a geometria do problema.
-- Desenho esquemático da modelagem do problema.
-
-   * A seguir, a cotagem do diâmetro do tubo:
+   * Cotagem do diâmetro do tubo:
 
 ![Design_Modeler_Cotagem_Diâmetro](https://user-images.githubusercontent.com/62161754/85886441-81583e00-b7bc-11ea-87c2-479a7a8b610a.png)
 
@@ -91,25 +86,24 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 ![Esquemático do problema Autocad 2D](https://user-images.githubusercontent.com/62161754/83933377-3f6c4700-a77e-11ea-9e10-a04fa9279dfd.PNG)
 
 
-# 2. Pré-Processamento:
+# 2. Pré-Processamento
 
- A segunda etapa deverá conter as respostas para as seguintes perguntas:
 
-## Quanto detalhado o domínio de cálculo precisa ser?
+## Detalhamento no domínio de cálculo
 
  O domínio de cálculo não necessita de um detalhamento elevado devido à baixa complexidade do problema. A geometria da tubulação será feita de maneira simplificada utilizando apenas o diâmetro da tubulação e seu comprimento. Conforme apresentado anteriormente a intenção é reproduzir uma simulação na qual os resultados possam ser observados e comparados com os cálculos teóricos. O objetivo é avaliar a normalidade da situação. Neste sentido, é importante encontrar o equilíbrio entre a demanda de tempo para os cálculos teóricos e o detalhamento da simulação do problema.
 
-## A geometria está adequada?
+## Geometria
 
  A tubulação em questão apresenta uma secção transversal circular com diâmetro de 40 mm e comprimento de 1000 mm, não possuindo elementos que necessitam de uma maior simplificação, logo a geometria produzida apresenta-se adequada para o problema.
     
-## Que tipo de malha e método usar? Estruturada ou não-estruturada? Volumes Finitos ou Elementos Finitos?
+## Malha e método utilizado
 
  A escolha realizada para a simulação foi a malha automática gerada pelo próprio Ansys Student. A malha resultada é estruturada, ou seja, apresenta um menor número de elementos, permitindo um menor tempo de simulação. Além disso, a malha obtida permite que seus elementos possam alinhar-se com a direção dos gradientes do escoamento, ou seja, é possível obter uma melhor precisão nos resultados.
  
  O método utilizado será o MVF (Método dos Volumes Finitos) por ser mais adequado para a Mecânica dos Fluidos. O método no software se baseia em, de forma geral, decompor o domínio em volumes de controle na malha computacional, utilizar as equações integrais de conservação para cada volume de controle, aproximar em valores numéricos as integrais, aproximar os valores das variáveis nas faces e as derivadas com a informação das variáveis nodais e por último montar e solucionar o sistema algébrico obtido.
     
-## Geração da malha e sua qualidade:
+## Geração e qualidade da malha
 
  A malha foi gerada automaticamente através do botão "generate":
     
@@ -150,7 +144,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
  A partir desses valores a malha gerada foi classificada de maneira positiva. Como pode ser visto, o valor máximo de Dissimetria se encontra em 0,47313 e o valor mínimo da Qualidade Ortogonal em 0,82069, classificando ambos na margem do Muito Bom nas escalas de qualidade.
     
     
-## Quais são as informações de entrada (Input) do problema?
+## Informações de entrada (Input) do problema
 
  As informações de entrada do problema são a pressão relativa na saída, que será considerada zero, e a velocidade de entrada do problema, a qual foi calculada utilizando o valor da vazão volumétrica fornecido e a Equação da Continuidade, como demonstrado a seguir:
     
@@ -172,7 +166,7 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
    ![CodeCogsEqn_velocidade](https://user-images.githubusercontent.com/62161754/85891418-6ccc7380-b7c5-11ea-8b1f-782c08bc05e8.gif)
     
     
-## Que escolhas devem ser feitas em relação ao processamento da solução?
+## Escolhas para o processamento da solução
 
  Após a escolha da malha, foi feito o estabelecimento das regiões que receberão as condições de contorno, ou seja, onde será a entrada e a saída do escoamento. Primeiramente foi necessário escolher as faces do sólido, utilizando o recurso a seguir:
     
@@ -211,7 +205,7 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
    ![CFX-PRE_Solver_Control_Default - Copia](https://user-images.githubusercontent.com/62161754/85911473-d5cede00-b7fb-11ea-8564-acd189ac0581.png)
 
     
-## Quais são os prazos e disponibilidade de capacidade computacional para a análise em questão? 
+## Prazos e capacidade computacional disponível
     
  O prazo para realização da etapa de pré-processamento é de aproximadamente uma semana, sendo suficiente devido à complexidade da simulação.
     
@@ -222,18 +216,12 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
    * Sistema Operacional: Windows 10 
     
 
-## O projeto deverá conter nesta etapa:
-
-- Descrição do pré-processamento feito no ANSYS.
-- Imagens da malha de cálculo do problema.
-
-
 # 3. Processamento e Pós-Processamento:
 
 
-## Simulação:
+## Simulação preliminar
 
-### O histórico de convergência do cálculo está adequado?
+### Histórico de convergência
 
 Na etapa do processamento de solução foi obtido o gráfico de convergência da simulação, como pode ser visto, o histórico de convergência encontra-se adequado devido ao fato de  todas as curvas estarem direcionadas para baixo.
 
@@ -241,17 +229,17 @@ Na etapa do processamento de solução foi obtido o gráfico de convergência da
 
 
 
-### Quanto tempo a simulação está levando para ser processada?
+### Tempo de processamento da simulação
 
 A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade na geometria adotada e da malha utilizada.
 
 ![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86954231-ff590500-c12b-11ea-9f5d-69192250f28b.png)
 
-### Os resíduos estão em valores aceitáveis?
+### Resíduos
 
 Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis, uma vez que a malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom. Permitindo resultados potencialmente condizentes para os requisitos de solução apresentados.
 
-## Resultados:
+## Resultados preliminares
 
 Após o processamento, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
 
@@ -269,7 +257,7 @@ Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a 
 ![CFD-Post_Line2](https://user-images.githubusercontent.com/62161754/86947461-2f9ba600-c122-11ea-9b3f-531a0f005f31.png)
 
 
-### A simulação fornece resultados qualitativos?
+### Resultados qualitativos e quantitativos
 
 Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
 
@@ -308,13 +296,11 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    ![CFD-Post_Chart1_Pressure](https://user-images.githubusercontent.com/62161754/86952932-172f8980-c12a-11ea-91de-cac1c165c13c.png)
    
    
-   
-### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
 
 A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores para o Número de Reynolds de acordo com diferentes valores de velocidade média e da Perda de carga. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
 
 
-   #### Número de Reynolds:
+   #### Número de Reynolds
    
    O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) será importante para o cálculo e análise do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
    
@@ -345,7 +331,7 @@ Logo:
 ![CodeCogsEqn_n_reynolds_result](https://user-images.githubusercontent.com/62161754/86964268-333c2680-c13c-11ea-8817-ed3551b4bcc2.gif)
    
    
- Com os cálculos realizados, foi elaborada uma tabela com as comparações entre os valores para o Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) calculados e os valores obtidos pela simulação de acordo com a mudança de velocidade:
+ Com os cálculos realizados, elaborou-se uma tabela com as comparações entre os valores para o Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) calculados e os valores obtidos pela simulação de acordo com a variação de velocidade:
    
    | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
    |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
@@ -355,9 +341,9 @@ Logo:
    | 0,1 | 4475,86 | 4474,1 | 0,0393% |
    
    
-   #### Perda de carga:
+   #### Perda de carga
    
-   A perda de carga (![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif)) mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação.
+   A perda de carga (![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif)) mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação simulada.
 
 | Velocidade (m/s) | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) simulado |  
 |:--------------------:|:--------------------:|
@@ -367,7 +353,7 @@ Logo:
 | 0,1 | 2,4963 |
 
 
-### Estudo paramétrico:
+## Estudo paramétrico preliminar
 
 Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, o qual pode ser classificado como em regime laminar, de transição ou turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
 
@@ -418,7 +404,9 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
 | "liso"  | 0 |
  
  
-   #### Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através da simulação para:
+   #### Fator de Atrito
+   
+   Inseriram-se tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito de acordo com os materiais selecionados e a variação da velocidade.
    
    * ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
    
@@ -475,19 +463,20 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
 
 
 
-### Análise dos resultados obtidos no estudo paramétrico:
+### Análise preliminar dos resultados do estudo paramétrico
 
 A partir do resultados apresentados é possível notar que, à medida que ocorre o aumento da velocidade média do escoamento e do número de Reynolds, os valores do Fator de Atrito decrescem, quando isso ocorre a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim os elementos de rugosidade partem a emergir através desta camada, tornando o efeito da rugosidade importante para esses casos. Como mencionado anteriormente, quando o escoamento passa a apresentar comportamento de regime turbulento, o Fator de Atrito não depende mais apenas do Número de Reynolds, mas também da rugosidade. Observa-se que quando o valor da rugosidade absoluta aumenta, para o mesmo tubo circular com a área de secção transversal constante, o valor do Fator de Atrito também aumenta.
 
 Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de materiais possuem valores de rugosidade maiores e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menores e causam efeitos menores no Fator de Atrito. Comparando os valores de rugosidade para o mesmo material porém produzidos de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal, dessa maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade mais elevado, resultando em valores maiores para o Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, resultando em uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação perante os valores de rugosidade e Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito.
 
 
-### Os resultados estão de acordo com a realidade física do escoamento?
+### Análise preliminar dos resultados de acordo com a realidade física do escoamento
 
 
-#### Número de Reynolds:
-
-#### Fator de Atrito:
+#### Perfil de velocidade
+#### Perda de carga 
+#### Número de Reynolds
+#### Fator de Atrito
 
 
 
