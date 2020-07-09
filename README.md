@@ -413,9 +413,9 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
 | "liso"  | 0 |
  
  
-   * Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através dos valores da simulação para:
+   #### Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através da simulação para:
    
-   ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
+   * ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
    
    | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:---------------------------------:|:--------------------------------:|:----------------------------:|
@@ -466,7 +466,6 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
    | Ferro fundido velho | 0,003 | 0,0912639 | 0,0912654 | 0,0016% |
    | PVC, plásticos em geral | 0,0000015 | 0,0386512 | 0,036556 | 0,0113% |
    | "liso" | 0 | 0,0386112 | 0,0386156 | 0,0113% |
-
 
 
 
