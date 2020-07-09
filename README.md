@@ -74,19 +74,19 @@ A primeira etapa deverá conter as respostas para as seguintes perguntas:
 - Desenhos CAD mostrando a geometria do problema.
 - Desenho esquemático da modelagem do problema.
 
-A seguir, a imagem do Sketch com cotagem do diâmetro do tubo:
+   * A seguir, a cotagem do diâmetro do tubo:
 
 ![Design_Modeler_Cotagem_Diâmetro](https://user-images.githubusercontent.com/62161754/85886441-81583e00-b7bc-11ea-87c2-479a7a8b610a.png)
 
 
 
-Extrude do Sketch --> geometria final do tubo:
+   * Geometria final do tubo:
 
 ![Design_Modeler_Extrude](https://user-images.githubusercontent.com/62161754/85886469-8f0dc380-b7bc-11ea-9fdb-ef9cef544848.png)
 
 
 
-Desenho esquemático da modelagem do problema, elaborado no AutoCAD:
+   * Desenho esquemático da modelagem do problema, elaborado no AutoCAD:
 
 ![Esquemático do problema Autocad 2D](https://user-images.githubusercontent.com/62161754/83933377-3f6c4700-a77e-11ea-9e10-a04fa9279dfd.PNG)
 
@@ -357,6 +357,7 @@ Logo:
    
    #### Perda de carga:
    
+   A perda de carga aferida 
    A seguir encontram-se o valor simulado de Perda de Carga de acordo com a velocidade de escoamento e a comparação com o valor da queda de pressão mensurada na tubulação:
 
 | Perda de Carga (Pa)  | Valor medido na tubulação (Pa)  | 
