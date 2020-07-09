@@ -313,20 +313,20 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
 
 A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores de Perda de Carga e do Número de Reynolds de acordo com diferentes valores de velocidade média. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
 
-A seguir os valores de Perda de Carga e Número de Reynolds, fornecidos pelo Software para valores distintos de velocidade de escoamento:
 
-| Velocidade (m/s) | Perda de Carga (Pa)  | Número de Reynolds | 
-|:-----:|:--------------------:|:----------------:|
-| 0,02  | 0,42433   | 893,53 |
-| 0,05  | 1,1608| 2236,2 |
-| 0,0795  | 1,8326 | 3556,5 | 
-| 0,1  | 2,4963 | 4474,1 |
+   #### Perda de carga:
+   
+   A seguir encontram-se o valor simulado de Perda de Carga de acordo com a velocidade de escoamento e a comparação com o valor da queda de pressão mensurada na tubulação:
 
-### Estudo paramétrico:
+| Perda de Carga (Pa)  | Valor medido na tubulação (Pa)  | 
+|:--------------------:|:--------------------:|
+| 1,8326 | 2 | 
 
-Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, ou seja, em qual região ele se encontra, tal análise depende diretamente do cálculo do Número de Reynolds:
-
-![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
+   #### Número de Reynolds:
+   
+   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) será importante para o cálculo e análise do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
+   
+   ![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
 
 Onde ![CodeCogsEqn_rho](https://user-images.githubusercontent.com/62161754/86963801-734ed980-c13b-11ea-8607-2d63465484e0.gif) , ![CodeCogsEqn_v](https://user-images.githubusercontent.com/62161754/86963546-13f0c980-c13b-11ea-8050-63bfec6b6913.gif) , ![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif) , ![CodeCogsEqn_mu](https://user-images.githubusercontent.com/62161754/86963562-1b17d780-c13b-11ea-9aae-fcf80ca984a6.gif) respectivamente são:
 
@@ -352,12 +352,23 @@ Logo:
 
 ![CodeCogsEqn_n_reynolds_result](https://user-images.githubusercontent.com/62161754/86964268-333c2680-c13c-11ea-8817-ed3551b4bcc2.gif)
    
+   
+ Com os cálculos realizados, foi elaborada uma tabela com as comparações entre os valores para o Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) calculados e os valores obtidos pela simulação de acordo com a mudança de velocidades:
+   
+   | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
+   |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
+   | 0,02 | 895,17 | 893,53 | 0,1835% |
+   | 0,05 | 2237,93 | 2236,2 | 0,0773% |
+   | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
+   | 0,1 | 4475,86 | 4474,1 | 0,0393% |
 
-Um escoamento pode ser classificado em regime laminar, de transição ou turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+### Estudo paramétrico:
 
-   * Região laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
-   * Região de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
-   * Região de turbulência: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
+Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, o qual pode ser classificado como em regime laminar, de transição ou turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+
+   * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
+   * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
+   * Regime turbulento: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
    
 
 Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o fator de atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
@@ -405,14 +416,14 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
    1) Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através dos valores da simulação para:
    ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
    
-   | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:---------------------------------:|:--------------------------------:|:----------------------------:|
    | 0,07149480 | 0,071626023 | 0,1832% |
    
    
    2) ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
    
-   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0506346 | 0,0506456 | 0,0217% |
    | Aço galvanizado sem costura | 0,0006 | 0,0488869 | 0,0488983 | 0,0233% |
@@ -427,7 +438,7 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
    
    3) ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
    
-   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0448128 | 0,0448184 | 0,0124% |
    | Aço galvanizado sem costura | 0,0006 | 0,0427494 | 0,0427554 | 0,0140% |
@@ -442,7 +453,7 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
   
    4) ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
 
-  | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+  | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0424226 | 0,0424264 | 0,0089% |
    | Aço galvanizado sem costura | 0,0006 | 0,0401788 | 0,0401830 | 0,0104% |
