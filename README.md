@@ -230,31 +230,30 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
 
 # 3. Processamento e Pós-Processamento:
 
-A terceira etapa deverá conter as respostas para as seguintes perguntas:
 
 ## Simulação:
 
 ### O histórico de convergência do cálculo está adequado?
 
-A etapa do processamento da solução no Ansys fornece o gráfico de convergência da simulação, sendo possível observá-la a seguir:
+Na etapa do processamento de solução foi obtido o gráfico de convergência da simulação, como pode ser visto, o histórico de convergência encontra-se adequado devido ao fato de  todas as curvas estarem direcionadas para baixo.
 
 ![Solver_Manager_Time - Copia](https://user-images.githubusercontent.com/62161754/86939287-c31ba980-c117-11ea-88ce-07c9acb9850a.png)
 
-Como pode ser visto, o histórico de convergência encontra-se adequado devido ao fato de  todas as curvas estarem direcionadas para baixo.
+
 
 ### Quanto tempo a simulação está levando para ser processada?
 
-A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade apresentada pela geometria adotada e da malha utilizada.
+A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade na geometria adotada e da malha utilizada.
 
 ![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86954231-ff590500-c12b-11ea-9f5d-69192250f28b.png)
 
 ### Os resíduos estão em valores aceitáveis?
 
-Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis. A malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom, permitindo resultados potencialmente condizentes para os requisitos de solução apresentados.
+Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis, uma vez que a malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom. Permitindo resultados potencialmente condizentes para os requisitos de solução apresentados.
 
 ## Resultados:
 
-Após o processamento efetuado pelo Software, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
+Após o processamento, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
 
 ![CFD-Post_Location_Plane_Cursor](https://user-images.githubusercontent.com/62161754/86946078-3aedd200-c120-11ea-8f6e-667c9de0e188.png)
 
@@ -274,7 +273,7 @@ Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a 
 
 Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
 
-   * Vetores de velocidade do escoamento com 15 amostras, inseridos através da ferramenta "Insert Vector":
+   * Vetores de velocidade do escoamento com 15 amostras, inseridos através da ferramenta "Vector":
    
    ![CFD-Post_Vector1](https://user-images.githubusercontent.com/62161754/86953049-41814700-c12a-11ea-91a4-97d8e922a5a3.png)
    
@@ -282,7 +281,7 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
    
 
-   * Contorno de perfil de velocidade com 15 amostras, utilizando a ferramenta "Insert Contour":
+   * Contorno de perfil de velocidade com 15 amostras, utilizando a ferramenta "Contour":
    
    ![CFD-Post_Contour_cursor](https://user-images.githubusercontent.com/62161754/86953204-77263000-c12a-11ea-8a9f-cb9b4ae9f05c.png)
    
@@ -295,7 +294,7 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    ![CFD-Post_Pressure_contour_15](https://user-images.githubusercontent.com/62161754/86953335-ad63af80-c12a-11ea-9c7c-5303db7fcd39.png)
    
    
-   * Gráfico de perfil de velocidade com 100 amostras, gerado pela ferramenta "chart":
+   * Gráfico de perfil de velocidade com 100 amostras, gerado pela ferramenta "Chart":
    
    ![CFD-Post_Chart_cursor](https://user-images.githubusercontent.com/62161754/86973946-cc266e00-c14b-11ea-9482-76d4bed07feb.png)
    
@@ -312,7 +311,7 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
 ### É possível calcular resultados quantitativos e qualitativos com o que a simulação calculou?
 
-A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores de Perda de Carga e do Número de Reynolds de acordo com diferentes valores de velocidade do escoamento. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
+A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores de Perda de Carga e do Número de Reynolds de acordo com diferentes valores de velocidade média. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
 
 A seguir os valores de Perda de Carga e Número de Reynolds, fornecidos pelo Software para valores distintos de velocidade de escoamento:
 
@@ -325,7 +324,7 @@ A seguir os valores de Perda de Carga e Número de Reynolds, fornecidos pelo Sof
 
 ### Estudo paramétrico:
 
-Em escoamentos podem ocorrem diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, ou seja, em qual região ele se encontra, tal análise depende diretamente do cálculo do Número de Reynolds:
+Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, ou seja, em qual região ele se encontra, tal análise depende diretamente do cálculo do Número de Reynolds:
 
 ![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
 
@@ -374,23 +373,23 @@ Para os escoamentos turbulentos a expressão mais usual para o Fator de Atrito (
 
 ![CodeCogsEqn_Colebrook](https://user-images.githubusercontent.com/62161754/86969679-8914cc80-c144-11ea-8267-5799699d6e67.gif)
 
-É possível notar que a equação de Colebrook é implícita em ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif) , sendo possível calcular através de Softwares para cálculo numérico ou realizando algumas iterações, devido à estabilidade da expressão.
+É possível notar que a equação de Colebrook é implícita em ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif) , sendo possível calcular através de Softwares para cálculo numérico ou realizando apenas algumas iterações.
 
 Outra expressão aceita para casos onde ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86970337-98e0e080-c145-11ea-971c-e55cd92bb3e2.gif) > 3000 é a equação de Haaland.
 
 ![CodeCogsEqn_Haaland](https://user-images.githubusercontent.com/62161754/86969681-89ad6300-c144-11ea-9e54-249641a9bb8e.gif)
 
-A equação de Haaland é explícita, porém os resultandos diferem cerca de 2% dos resultados obtidos através da equação de Colebrook.
+A equação de Haaland é explícita em ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif) , porém os resultandos diferem cerca de 2% dos resultados obtidos através da equação de Colebrook.
 
-Além disso, para casos em que a rugosidade da tubulação é desconsiderada, ou seja, a superfície é considerada lisa, outra equação aceita é a de Prandtl.
+Além disso, para casos em que a superfície da tubulação é considerada lisa, outra equação aceita é a de Prandtl.
 
 ![CodeCogsEqn_Prandtl](https://user-images.githubusercontent.com/62161754/86971333-5f10d980-c147-11ea-837d-426760d69145.gif)
 
-Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito, Número de Reynolds e a rugosidade relativa.
+Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito, Número de Reynolds e a rugosidade relativa. A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
 
 ![Diagrama_de_Moody_2](https://user-images.githubusercontent.com/62161754/86973362-d72cce80-c14a-11ea-8241-d6e45652dcce.jpg)
 
-Para o estudo paramétrico do problema em questão serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros:
+Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de Reynolds, pode variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a influência do tipo de material da tubulação nos valores do Fator de Atrito.
 
 | Material | Rugosidade absoluta (m) |
 |:-----:|:--------------------:|
@@ -400,8 +399,61 @@ Para o estudo paramétrico do problema em questão serão considerados os seguin
 | Ferro fundido com leve oxidação  | 0,0003 |
 | Ferro fundido velho  | 0,003 |
 | PVC, plásticos em geral  | 0,0000015 |
-| "liso"  | - |
+| "liso"  | 0 |
  
+ 
+   1) Valores do Fator de Atrito obtidos através de cálculos teóricos e valores obtidos através dos valores da simulação para:
+   ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
+   
+   | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   |:---------------------------------:|:--------------------------------:|:----------------------------:|
+   | 0,07149480 | 0,071626023 | 0,1832% |
+   
+   
+   2) ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
+   
+   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
+   | Aço galvanizado com costura | 0,00015 | 0,0506346 | 0,0506456 | 0,0217% |
+   | Aço galvanizado sem costura | 0,0006 | 0,0488869 | 0,0488983 | 0,0233% |
+   | Ferro fundido novo | 0,00025 | 0,0535383 | 0,0525387 | 0,0197% |
+   | Ferro fundido com leve oxidação | 0,0003 | 0,0534576 | 0,0534679 | 0,0192% |
+   | Ferro fundido velho | 0,003 | 0,0950876 | 0,0950934 | 0,0061% |
+   | PVC, plásticos em geral | 0,0000015 | 0,0477268 | 0,0477385 | 0,0245% |
+   | "liso" | 0 | 0,0476968 | 0,0477085 | 0,0245% |
+   
+   
+   
+   
+   3) ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
+   
+   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
+   | Aço galvanizado com costura | 0,00015 | 0,0448128 | 0,0448184 | 0,0124% |
+   | Aço galvanizado sem costura | 0,0006 | 0,0427494 | 0,0427554 | 0,0140% |
+   | Ferro fundido novo | 0,00025 | 0,0470113 | 0,0470166 | 0,0112% |
+   | Ferro fundido com leve oxidação | 0,0003 | 0,0480778 | 0,0480829 | 0,0106% |
+   | Ferro fundido velho | 0,003 | 0,0922701 | 0,0922726 | 0,0027% |
+   | PVC, plásticos em geral | 0,0000015 | 0,0413589 | 0,0413652 | 0,0152% |
+   | "liso" | 0 | 0,0413226 | 0,0413290 | 0,0154% |
+  
+  
+  
+  
+   4) ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
+
+  | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | erro percentual |
+   |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
+   | Aço galvanizado com costura | 0,00015 | 0,0424226 | 0,0424264 | 0,0089% |
+   | Aço galvanizado sem costura | 0,0006 | 0,0401788 | 0,0401830 | 0,0104% |
+   | Ferro fundido novo | 0,00025 | 0,0447875 | 0,0447910 | 0,0078% |
+   | Ferro fundido com leve oxidação | 0,0003 | 0,0459265 | 0,0459299 | 0,0074% |
+   | Ferro fundido velho | 0,003 | 0,0912639 | 0,0912654 | 0,0016% |
+   | PVC, plásticos em geral | 0,0000015 | 0,0386512 | 0,036556 | 0,0113% |
+   | "liso" | 0 | 0,0386112 | 0,0386156 | 0,0113% |
+
+
+
 
 
 ### Análise dos resultados obtidos:
