@@ -519,7 +519,7 @@ Ao considerar o escoamento como laminar, nota-se a diferença entre o gráfico d
 
 ![perfil_velocidade_laminar_sist2](https://user-images.githubusercontent.com/62161754/87111183-1ccac380-c23f-11ea-820e-e23855ad75da.png)
 
-O perfil de velocidade apresenta um formato quase parabólico porém mais achatado, caracterizando, mais uma vez, um escoamento turbulento. A partir disto, pode-se dizer que o escoamento adotado no pré-processamento não corresponde fielmente com a realidade física do escoamento.
+O perfil de velocidade apresenta um formato próximo ao parabólico porém, mais achatado, caracterizando, mais uma vez, um escoamento turbulento. A partir disto, pode-se dizer que o escoamento adotado no pré-processamento não corresponde fielmente com a realidade física do escoamento.
 
 ![CFD-Post_Chart2_Velocity](https://user-images.githubusercontent.com/62161754/87111197-23f1d180-c23f-11ea-81cb-271cfc051a73.png)
 
@@ -527,7 +527,7 @@ O perfil de velocidade apresenta um formato quase parabólico porém mais achata
 #### Perda de carga:
 
 Os valores de perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif)
-) apresentaram os maiores erros percentuais, quando comparados com os demais resultados analisados. O escoamento laminar simulado não apresentou valores próximos aos valores calculados. Adotando um comportamento não correspondente ao esperado. 
+) apresentaram os maiores erros percentuais, quando comparados com os demais resultados analisados. O escoamento laminar simulado não apresentou valores próximos aos valores calculados, adotando um comportamento não correspondente ao esperado. 
 
 | Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
 |:--------------------:|:--------------------:|:-------------------------:|:--------------:|
@@ -538,9 +538,7 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 
 ![CFD-Post_Chart1_Pressure](https://user-images.githubusercontent.com/62161754/87111209-28b68580-c23f-11ea-9b62-8fec0a50bf6d.png)
 
-| ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) medido (Pa)
- | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) simulado (Pa)
- | Erro percentual |
+| ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) medido (Pa)| ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) simulado (Pa) | Erro percentual |
 |:-------------------:|:----------------------:|:--------------------:|
 | 2,0 | 1,8326 | 8,37% |
 
