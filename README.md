@@ -500,14 +500,26 @@ Como mencionado anteriormente, quando o escoamento passa a apresentar comportame
 
 Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de materiais possuem valores de rugosidade maiores e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores mais baixos e causam efeitos menores no Fator de Atrito. Comparando os valores de rugosidade para tubulações do mesmo material porém produzidas de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal, dessa maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade mais elevado resultando em valores maiores para o Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, gerando uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação perante os valores de rugosidade e Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito. Sendo assim, os resultados preliminares obtidos, para este estudo paramétrico, correspondem com a realidade física esperada.
 
+#### Número de Reynolds:
+
+Para a simulação preliminar realizada foi adotado para o escoamento, durante o pré-processamento, o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento. Tal fato, no entanto, não apresentou um erro percentual alto entre o resultado gerado pelo Software
+no pós-processamento através da inserção de parâmetros, e os resultados teóricos obtidos através dos cálculos mencionados. 
+
+ | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
+   |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
+   | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
+
+
+
 #### Perfil de velocidade:
+
 
 
 
 #### Perda de carga:
 
 
-#### Número de Reynolds:
+
 
 
 
