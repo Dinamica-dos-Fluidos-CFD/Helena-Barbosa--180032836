@@ -236,7 +236,7 @@ Na etapa do processamento de solução foi obtido o gráfico de convergência da
 
 ### Tempo de processamento da simulação:
 
-A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade na geometria adotada e da malha utilizada.
+A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade da geometria adotada e da malha utilizada.
 
 ![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86954231-ff590500-c12b-11ea-9f5d-69192250f28b.png)
 
@@ -348,14 +348,34 @@ Logo:
    
    #### Perda de carga:
    
-   A perda de carga (![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif)) mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação simulada.
+   Para o cálculo teórico da Perda de carga (![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87108254-3f0d1300-c238-11ea-9405-7b5f62e453ea.gif)) em Pa, utilizou-se a seguinte expressão:
+   
+   ![CodeCogsEqn_pressureloss](https://user-images.githubusercontent.com/62161754/87108264-46342100-c238-11ea-9ea9-f0b7b256947a.gif)
 
-| Velocidade (m/s) | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) simulado |  
-|:--------------------:|:--------------------:|
-| 0,02 | 0,42433 |
-| 0,05 | 1,1608 |
-| 0,0795 | 1,8326 |
-| 0,1 | 2,4963 |
+   Onde ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87108383-8f847080-c238-11ea-9077-d87850297b36.gif) e ![CodeCogsEqn_L](https://user-images.githubusercontent.com/62161754/87108360-82678180-c238-11ea-9c26-d4c67627341b.gif) são, respectivamente:
+   
+   * Fator de Atrito, objeto do estudo paramétrico, para o este cálculo inicial da Perda de carga na tubulação apresentada, adotou-se a superfície do cano como "lisa", resultando no seguinte do valor:
+   
+   ![CodeCogsEqn_f_number](https://user-images.githubusercontent.com/62161754/87108825-8ba51e00-c239-11ea-86d0-a5f086093802.gif)
+   
+   * Comprimento do tubo.
+   
+   ![CodeCogsEqn_L_m](https://user-images.githubusercontent.com/62161754/87108541-f570f800-c238-11ea-8358-090e487445bf.gif)
+   
+   Utilizando os valores acima e outros valores apresentados ateriormente, foi possível chegar ao valor teórico da Perda de carga:
+   
+   ![CodeCogsEqn_pressureloss_number](https://user-images.githubusercontent.com/62161754/87108286-50561f80-c238-11ea-9fae-c2b69d3cb999.gif)
+   
+   ![CodeCogsEqn_pressureloss_result](https://user-images.githubusercontent.com/62161754/87108290-53e9a680-c238-11ea-9aa7-ce0624e29866.gif)
+   
+   A perda de carga mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação simulada.
+
+| Velocidade (m/s) | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) teórico | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) simulado  | Erro percentual |
+|:--------------------:|:--------------------:|:-------------------------:|:--------------:|
+| 0,02 | 0,2058 | 0,42433 | 51,500%  |
+| 0,05 | 1,2867 | 1,1608 | 9,784% |
+| 0,0795 | 3,2530 | 1,8326 | 43,664% |
+| 0,1 | 5,1470 | 2,4963 | 51,499% |
 
 
 ## Estudo paramétrico preliminar:
