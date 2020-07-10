@@ -414,7 +414,8 @@ Além disso, para casos em que a superfície da tubulação é considerada lisa,
 
 Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito, Número de Reynolds e a rugosidade relativa. A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
 
-![Diagrama_de_Moody_2](https://user-images.githubusercontent.com/62161754/86973362-d72cce80-c14a-11ea-8241-d6e45652dcce.jpg)
+
+![Diagrama_de_Moody_3](https://user-images.githubusercontent.com/62161754/87110939-97dfaa00-c23e-11ea-9775-454d4cd43e8d.jpg)
 
 Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds podem variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a tendência do Fator de Atrito de acordo com o tipo de material da tubulação e a velocidade do fluido.
 
