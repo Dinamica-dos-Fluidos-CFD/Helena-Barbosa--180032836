@@ -311,7 +311,7 @@ A partir do processamento da simulação, efetuou-se a inserção de paramêtros
    
    ![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
 
-Onde ![CodeCogsEqn_rho](https://user-images.githubusercontent.com/62161754/86963801-734ed980-c13b-11ea-8607-2d63465484e0.gif) , ![CodeCogsEqn_v](https://user-images.githubusercontent.com/62161754/86963546-13f0c980-c13b-11ea-8050-63bfec6b6913.gif) , ![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif) , ![CodeCogsEqn_mu](https://user-images.githubusercontent.com/62161754/86963562-1b17d780-c13b-11ea-9aae-fcf80ca984a6.gif) respectivamente são:
+Onde ![CodeCogsEqn_rho](https://user-images.githubusercontent.com/62161754/86963801-734ed980-c13b-11ea-8607-2d63465484e0.gif) , ![CodeCogsEqn_v](https://user-images.githubusercontent.com/62161754/86963546-13f0c980-c13b-11ea-8050-63bfec6b6913.gif) , ![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif) , ![CodeCogsEqn_mu](https://user-images.githubusercontent.com/62161754/86963562-1b17d780-c13b-11ea-9aae-fcf80ca984a6.gif) respectivamente, são:
 
    * Massa específica da água:
    
@@ -354,7 +354,7 @@ Logo:
 
    Onde ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87108383-8f847080-c238-11ea-9077-d87850297b36.gif) e ![CodeCogsEqn_L](https://user-images.githubusercontent.com/62161754/87108360-82678180-c238-11ea-9c26-d4c67627341b.gif) são, respectivamente:
    
-   * Fator de Atrito, objeto do estudo paramétrico, para o este cálculo inicial da Perda de carga na tubulação apresentada, adotou-se a superfície do cano como "lisa", resultando no seguinte do valor:
+   * Fator de Atrito, objeto do estudo paramétrico, para este cálculo inicial da Perda de carga na tubulação, adotou-se a superfície do cano como "lisa", resultando no seguinte valor:
    
    ![CodeCogsEqn_f_number](https://user-images.githubusercontent.com/62161754/87108825-8ba51e00-c239-11ea-86d0-a5f086093802.gif)
    
@@ -416,7 +416,8 @@ Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico
 
 ![Diagrama_de_Moody_2](https://user-images.githubusercontent.com/62161754/86973362-d72cce80-c14a-11ea-8241-d6e45652dcce.jpg)
 
-Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de Reynolds, pode variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a influência do tipo de material da tubulação e a velocidade do fluido, nos valores do Fator de Atrito.
+Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds podem variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a tendência do Fator de Atrito de acordo com o tipo de material da tubulação e a velocidade do fluido.
+
 
 | Material | Rugosidade absoluta (m) |
 |:-----:|:--------------------:|
@@ -431,7 +432,7 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
  
    #### Fator de Atrito:
    
-   Inseriram-se tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito de acordo com os materiais selecionados e a variação da velocidade.
+  Foram estabelecidas tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito, de acordo com os materiais selecionados e a variação da velocidade.
    
    * ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
    
@@ -492,11 +493,14 @@ Como pode ser visto acima, o comportamento do escoamento, ou seja, o Número de 
 
 #### Fator de Atrito:
 
-A partir do resultados apresentados é possível notar que, à medida que ocorre o aumento da velocidade média do escoamento e do número de Reynolds, os valores do Fator de Atrito decrescem, quando isso ocorre a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim os elementos de rugosidade partem a emergir através desta camada, tornando o efeito da rugosidade importante para esses casos. Como mencionado anteriormente, quando o escoamento passa a apresentar comportamento de regime turbulento, o Fator de Atrito não depende mais apenas do Número de Reynolds, mas também da rugosidade. Observa-se que quando o valor da rugosidade absoluta aumenta, para o mesmo tubo circular com a área de secção transversal constante, o valor do Fator de Atrito também aumenta.
+A partir do resultados apresentados é possível notar que, à medida que ocorre o aumento da velocidade média do escoamento e do número de Reynolds, os valores do Fator de Atrito decrescem, quando isto ocorre, a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim os elementos de rugosidade passam a emergir através desta camada, tornando o efeito da rugosidade relevante para esses casos. 
 
-Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de materiais possuem valores de rugosidade maiores e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menores e causam efeitos menores no Fator de Atrito. Comparando os valores de rugosidade para o mesmo material porém produzidos de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal, dessa maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade mais elevado, resultando em valores maiores para o Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, resultando em uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação perante os valores de rugosidade e Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito.
+Como mencionado anteriormente, quando o escoamento passa a apresentar comportamento de regime turbulento, o Fator de Atrito não depende mais apenas do Número de Reynolds, mas também da rugosidade. Observa-se que quando o valor da rugosidade absoluta aumenta, para o mesmo tubo circular com a área de secção transversal constante, o valor do Fator de Atrito também aumenta.
+
+Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de materiais possuem valores de rugosidade maiores e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores mais baixos e causam efeitos menores no Fator de Atrito. Comparando os valores de rugosidade para tubulações do mesmo material porém produzidas de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal, dessa maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade mais elevado resultando em valores maiores para o Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, gerando uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação perante os valores de rugosidade e Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito. Sendo assim, os resultados preliminares obtidos, para este estudo paramétrico, correspondem com a realidade física esperada.
 
 #### Perfil de velocidade:
+
 
 
 #### Perda de carga:
