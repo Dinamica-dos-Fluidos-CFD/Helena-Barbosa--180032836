@@ -526,17 +526,25 @@ O perfil de velocidade apresenta um formato quase parabólico porém mais achata
 
 #### Perda de carga:
 
-Os valores de perda de carga apresentaram os maiores erros percentuais, quando comparados com os demais resultados analisados. O escoamento laminar simulado apresentou valores próximos aos valores calculados, a causa provável é a caracterização do escoamento durante o estabelecimento do domínio padrão.
+Os valores de perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif)
+) apresentaram os maiores erros percentuais, quando comparados com os demais resultados analisados. O escoamento laminar simulado não apresentou valores próximos aos valores calculados. Adotando um comportamento não correspondente ao esperado. 
 
 | Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
 |:--------------------:|:--------------------:|:-------------------------:|:--------------:|
 | 0,0795 | 3,2530 | 1,8326 | 43,664% |
 
 
-## O projeto deverá conter nesta etapa:
+O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e simulados terem apresentado diferença percentual elevada, a perda de carga calculada pelo Software aproxima-se do valor medido através dos sensores de pressão na tubulação.
 
-- Análise dos resultados obtidos.
-- Comparação dos resultados numéricos com os resultados analíticos de cada problema.
-- Imagens de visualização do escoamento.
-- Análise dos resultados obtidos pelo estudo paramétrico.
+![CFD-Post_Chart1_Pressure](https://user-images.githubusercontent.com/62161754/87111209-28b68580-c23f-11ea-9b62-8fec0a50bf6d.png)
+
+| ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) medido (Pa)
+ | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) simulado (Pa)
+ | Erro percentual |
+|:-------------------:|:----------------------:|:--------------------:|
+| 2,0 | 1,8326 | 8,37% |
+
+
+# Referências:
+
 
