@@ -494,7 +494,7 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
 
 #### Número de Reynolds:
 
-Para a simulação preliminar realizada foi adotado para o escoamento, durante o pré-processamento, o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento. Tal fato, no entanto, não apresentou um erro percentual alto entre o resultado gerado pelo Software
+Para a simulação preliminar realizada foi adotado para o escoamento, durante o pré-processamento, o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento. Tal fato, no entanto, não apresentou um erro percentual elevado entre o resultado gerado pelo Software
 no pós-processamento através da inserção de parâmetros, e os resultados teóricos obtidos através dos cálculos mencionados. 
 
  | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
@@ -544,5 +544,11 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 
 
 # Referências:
+
+MORAN , Michael J. et al. Introdução à engenharia de Sistemas Térmicos: Termodinâmica, Mecânica dos Fluidos e Transferência de Calor. Jonh Wiley & Sons, Inc. 2003.
+ 
+FOX, Robert W. et al. Introdução á Mecânica dos Fluidos. 8ª ed. LTC, 2014.
+
+WHITE, Frank M. Fluid Mechanics. 7ª ed. New York: McGraw-Hill, 2011.
 
 
