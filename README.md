@@ -261,7 +261,7 @@ Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a 
 
 Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
 
-   * Vetores de velocidade do escoamento com 15 amostras, inseridos através da ferramenta "Vector":
+   * Vetores de velocidade do escoamento, inseridos através da ferramenta "Vector":
    
    ![CFD-Post_Vector1](https://user-images.githubusercontent.com/62161754/86953049-41814700-c12a-11ea-91a4-97d8e922a5a3.png)
    
