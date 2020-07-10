@@ -348,7 +348,7 @@ Logo:
    
    #### Perda de carga:
    
-   Para o cálculo teórico da Perda de carga (![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87108254-3f0d1300-c238-11ea-9405-7b5f62e453ea.gif)) em Pa, utilizou-se a seguinte expressão:
+   Para o cálculo teórico da Perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif)) em Pa, utilizou-se a seguinte expressão:
    
    ![CodeCogsEqn_pressureloss](https://user-images.githubusercontent.com/62161754/87108264-46342100-c238-11ea-9ea9-f0b7b256947a.gif)
 
@@ -370,7 +370,7 @@ Logo:
    
    A perda de carga mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação simulada.
 
-| Velocidade (m/s) | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) teórico | ![CodeCogsEqn_hf](https://user-images.githubusercontent.com/62161754/87077393-6bee0580-c1f9-11ea-82bf-84183ce8faf2.gif) (Pa) simulado  | Erro percentual |
+| Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
 |:--------------------:|:--------------------:|:-------------------------:|:--------------:|
 | 0,02 | 0,2058 | 0,42433 | 51,500%  |
 | 0,05 | 1,2867 | 1,1608 | 9,784% |
