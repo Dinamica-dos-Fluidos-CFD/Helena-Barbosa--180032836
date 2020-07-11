@@ -546,8 +546,6 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 ## Resultados:
 
 
-
-
 # Referências:
 
 MORAN , Michael J. et al. Introdução à engenharia de Sistemas Térmicos: Termodinâmica, Mecânica dos Fluidos e Transferência de Calor. Jonh Wiley & Sons, Inc. 2003.
