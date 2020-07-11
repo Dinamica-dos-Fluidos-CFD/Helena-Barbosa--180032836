@@ -262,8 +262,6 @@ Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a 
 ![CFD-Post_Line2](https://user-images.githubusercontent.com/62161754/86947461-2f9ba600-c122-11ea-9b3f-531a0f005f31.png)
 
 
-### Resultados:
-
 Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
 
    * Vetores de velocidade do escoamento, inseridos através da ferramenta "Vector":
@@ -490,9 +488,9 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
 
 
 
-### Análise preliminar:
+## Análise preliminar:
 
-#### Número de Reynolds:
+### Número de Reynolds:
 
 Para a simulação realizada, foi adotado para o escoamento o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento, tornando a simulação efetuada não coerente com a física do escoamento. Tal fato, no entanto, não causou um erro percentual elevado entre o resultado simulado no pós-processamento através da inserção de parâmetros, e os resultados teóricos obtidos através dos cálculos. 
 
@@ -502,7 +500,7 @@ Para a simulação realizada, foi adotado para o escoamento o regime laminar. Po
 
 Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação preliminar dos valores para o Fator de Atrito e suas correlações. Porém, para o perfil de velocidade e a perda de carga, a caracterização do regime como laminar ao invés de turbulento, afetou ambos resultados de maneira mais acentuada.
 
-#### Fator de Atrito:
+### Fator de Atrito:
 
 A partir do resultados apresentados é possível notar que, à medida que ocorre o aumento da velocidade média do escoamento e do número de Reynolds, os valores do Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87112513-6963ce00-c242-11ea-87de-3ccd84d13fb1.gif)) decrescem, quando isto ocorre, a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim os elementos de rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87112534-7680bd00-c242-11ea-8c25-6dd760907016.gif)) passam a emergir através desta camada, tornando o efeito da rugosidade relevante para estes casos. 
 
@@ -510,7 +508,7 @@ Como mencionado anteriormente, quando o escoamento passa a apresentar comportame
 
 Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de material possuem valores de rugosidade elevados e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menos elevados e causam efeitos menores. Comparando os valores de rugosidade para tubulações do mesmo material porém, produzidas de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal. Desta maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade maior, causando efeitos maiores no Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, gerando uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação na rugosidade e no Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito. Sendo assim, os resultados preliminares obtidos, para este estudo paramétrico, correspondem com a realidade física, apesar da caracterização do escoamento não ter sido adequada.
 
-#### Perfil de velocidade:
+### Perfil de velocidade:
 
 Ao considerar o escoamento como laminar, nota-se a diferença gráfica entre o perfil de velocidade obtido e o esperado. O perfil deve apresentar formato parabólico quando encontrado em regime laminar, no qual os maiores valores de velocidade encontram-se no centro do tubo e diminuem gradativamente ao aproximarem-se da parede da tubulação. A velocidade varia com o raio do tubo, essa variação de velocidade e a viscosidade do fluido resultam em uma tensão de cisalhamento na parede tubo. 
 
@@ -523,10 +521,10 @@ O perfil de velocidade simulado apresenta formato próximo ao parabólico porém
 ![CFD-Post_Chart2_Velocity](https://user-images.githubusercontent.com/62161754/87111197-23f1d180-c23f-11ea-81cb-271cfc051a73.png)
 
 
-#### Perda de carga:
+### Perda de carga:
 
 Os valores de perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif)
-) simulados apresentaram os maiores erros percentuais em relação aos cálculos teóricos, quando comparados com os demais resultados analisados. O escoamento laminar simulado não apresentou valores próximos aos valores calculados, adotando um comportamento não correspondente ao esperado. 
+) simulados apresentaram os maiores erros percentuais em relação aos cálculos teóricos, ao compará-los com os demais parâmetros analisados. O escoamento laminar simulado não apresentou valores próximos aos valores calculados, adotando um comportamento não correspondente a realidade física do escoamento.
 
 | Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
 |:--------------------:|:--------------------:|:-------------------------:|:--------------:|
@@ -540,6 +538,14 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) medido (Pa)| ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) simulado (Pa) | Erro percentual |
 |:-------------------:|:----------------------:|:--------------------:|
 | 2,0 | 1,8326 | 8,37% |
+
+
+## Simulação regime turbulento:
+
+
+## Resultados:
+
+
 
 
 # Referências:
