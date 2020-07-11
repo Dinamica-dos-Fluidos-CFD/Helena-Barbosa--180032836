@@ -186,7 +186,7 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
     
  Após as faces serem escolhidas e nomeadas, a próxima etapa consiste em estabelecer o Dominio Padrão do escoamento, no qual as escolhas consistiram na definição do material como água, a pressão de referência como 1 atm, a desconsideração de trocas de calor e a caracterização do escoamento como laminar.
     
-   ![CFX-Pre_water_and_reference_pressure](https://user-images.githubusercontent.com/62161754/85911299-da46c700-b7fa-11ea-8fc2-0581659433e5.png)
+   ![CFX-Pre_water_and_reference_pressure](https://user-images.githubusercontent.com/62161754/87212999-0896cd00-c2f8-11ea-9b11-24539bf16334.png)
     
    ![CFX-Pre_Domain_heat_transfer](https://user-images.githubusercontent.com/62161754/85911301-dca92100-b7fa-11ea-8732-c5249705757f.png)
     
@@ -194,7 +194,7 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
     
    ![CFX-Pre_Boundary_entrada](https://user-images.githubusercontent.com/62161754/85911165-cfd7fd80-b7f9-11ea-88bc-f53fb38c7161.png)
     
-   ![CFX-Pre_Boundary_entrada_Details_Speed](https://user-images.githubusercontent.com/62161754/85911168-d49cb180-b7f9-11ea-921e-1b49c128702d.png)
+   ![CFX-Pre_Boundary_entrada_Details_Speed](https://user-images.githubusercontent.com/62161754/87213041-514e8600-c2f8-11ea-8305-1922ea0675bf.png)
        
    ![CFX-Pre_Boundary_Saida](https://user-images.githubusercontent.com/62161754/85911346-1712be00-b7fb-11ea-8ed8-2d4d4e7190f5.png)
     
