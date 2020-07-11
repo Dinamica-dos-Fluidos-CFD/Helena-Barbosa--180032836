@@ -242,7 +242,7 @@ A simulação apresentou um tempo de processamento de aproximadamente 4 segundos
 
 ### Resíduos:
 
-Os resíduos, ou seja, o erro da simulação, encontram-se acetáveis, uma vez que a malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom. Permitindo resultados potencialmente condizentes para os requisitos de solução apresentados.
+Os resíduos, ou seja, o erro da simulação, encontram-se aceitáveis, uma vez que a malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom. Permitindo resultados potencialmente satisfatórios para os requisitos de solução apresentados.
 
 ## Resultados preliminares:
 
@@ -262,7 +262,7 @@ Consecutivamente foram adicionadas uma linha horizontal e outra vertical para a 
 ![CFD-Post_Line2](https://user-images.githubusercontent.com/62161754/86947461-2f9ba600-c122-11ea-9b3f-531a0f005f31.png)
 
 
-### Resultados qualitativos e quantitativos:
+### Resultados:
 
 Nessa etapa do pós-processamento, após a criação do plano de referência e das linhas, foram obtidos resultados qualitativos característicos de engenharia, como:
 
@@ -302,12 +302,12 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
    
 
-A partir do processamento da simulação, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo de valores para o Número de Reynolds de acordo com diferentes valores de velocidade média e da Perda de carga. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
+Também foram obtidos resultados quantitativos após o processamento, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo do Número de Reynolds e da Perda de carga de acordo com diferentes valores de velocidade média. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
 
 
    #### Número de Reynolds:
    
-   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) será importante para o cálculo e análise do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
+   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) é importante para a realização do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
    
    ![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
 
@@ -354,7 +354,7 @@ Logo:
 
    Onde ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87108383-8f847080-c238-11ea-9077-d87850297b36.gif) e ![CodeCogsEqn_L](https://user-images.githubusercontent.com/62161754/87108360-82678180-c238-11ea-9c26-d4c67627341b.gif) são, respectivamente:
    
-   * Fator de Atrito, objeto do estudo paramétrico, para este cálculo inicial da Perda de carga na tubulação, adotou-se a superfície do cano como "lisa", resultando no seguinte valor:
+   * Fator de Atrito, para este cálculo inicial da Perda de carga na tubulação, adotou-se a superfície do cano como "lisa", resultando no seguinte valor:
    
    ![CodeCogsEqn_f_number](https://user-images.githubusercontent.com/62161754/87108825-8ba51e00-c239-11ea-86d0-a5f086093802.gif)
    
@@ -362,13 +362,13 @@ Logo:
    
    ![CodeCogsEqn_L_m](https://user-images.githubusercontent.com/62161754/87108541-f570f800-c238-11ea-8358-090e487445bf.gif)
    
-   Utilizando os valores acima e outros valores apresentados ateriormente, foi possível chegar ao valor teórico da Perda de carga:
+   Utilizando estes e outros valores apresentados ateriormente, foi possível chegar ao valor teórico da Perda de carga:
    
    ![CodeCogsEqn_pressureloss_number](https://user-images.githubusercontent.com/62161754/87108286-50561f80-c238-11ea-9fae-c2b69d3cb999.gif)
    
    ![CodeCogsEqn_pressureloss_result](https://user-images.githubusercontent.com/62161754/87108290-53e9a680-c238-11ea-9aa7-ce0624e29866.gif)
    
-   A perda de carga mensurada na tubulação com uma velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação simulada.
+   A perda de carga mensurada na tubulação com a velocidade média do escoamento de 0,0795 m/s foi de 2 Pa. Assim como para o Número de Reynolds, foram inseridos diferentes valores de velocidade média para uma análise breve da perda de carga na tubulação simulada.
 
 | Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
 |:--------------------:|:--------------------:|:-------------------------:|:--------------:|
@@ -380,27 +380,27 @@ Logo:
 
 ## Estudo paramétrico preliminar:
 
-Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, o qual pode ser classificado como em regime laminar, de transição ou turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, o qual pode ser classificado como regime laminar, regime de transição ou regime turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
 
    * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
    * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
    * Regime turbulento: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
    
 
-Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o fator de atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
+Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o Fator de Atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
 ) depende apenas do Número de Reynolds:
 
 ![CodeCogsEqn_atrito_laminar](https://user-images.githubusercontent.com/62161754/86968814-2969f180-c143-11ea-9bd0-c71eec996e61.gif)
 
 
-Para os demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)), podendo variar de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. A rugosidade absoluta possui unidade de medida de comprimento e a rugosidade relativa é adimensional.
+Para os demais escoamentos faz-se importante a consideração de outro fator, a rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)), podendo variar de acordo com o material da tubulação, a maneira como foi fabricada e o tempo de utilização. A rugosidade absoluta (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)) possui unidade de medida de comprimento e a rugosidade relativa (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)/![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif)) é adimensional.
 
-Para os escoamentos turbulentos a expressão mais usual para o Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif)
+Para escoamentos turbulentos a expressão mais usual para o Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif)
 ) é a de Colebrook.
 
 ![CodeCogsEqn_Colebrook](https://user-images.githubusercontent.com/62161754/86969679-8914cc80-c144-11ea-8267-5799699d6e67.gif)
 
-É possível notar que a equação de Colebrook é implícita em ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif) , sendo possível calcular através de Softwares para cálculo numérico ou realizando apenas algumas iterações.
+É possível notar que a equação de Colebrook é implícita em ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86969713-9c279c80-c144-11ea-9d71-559956255946.gif) , sendo possível calculá-la através de Softwares de cálculo numérico ou realizando algumas iterações.
 
 Outra expressão aceita para casos onde ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86970337-98e0e080-c145-11ea-971c-e55cd92bb3e2.gif) > 3000 é a equação de Haaland.
 
@@ -412,7 +412,7 @@ Além disso, para casos em que a superfície da tubulação é considerada lisa,
 
 ![CodeCogsEqn_Prandtl](https://user-images.githubusercontent.com/62161754/86971333-5f10d980-c147-11ea-837d-426760d69145.gif)
 
-Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito, Número de Reynolds e a rugosidade relativa. A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
+Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito ( ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif)) e a rugosidade relativa (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)/![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif)). A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
 
 
 ![Diagrama_de_Moody_3](https://user-images.githubusercontent.com/62161754/87110939-97dfaa00-c23e-11ea-9775-454d4cd43e8d.jpg)
@@ -433,7 +433,7 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
  
    #### Fator de Atrito:
    
-  Foram estabelecidas tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito, de acordo com os materiais selecionados e a variação da velocidade.
+  Foram estabelecidas tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), de acordo com os materiais selecionados e a variação da velocidade.
    
    * ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
    
@@ -494,14 +494,14 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
 
 #### Número de Reynolds:
 
-Para a simulação preliminar realizada foi adotado para o escoamento, durante o pré-processamento, o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento. Tal fato, no entanto, não apresentou um erro percentual elevado entre o resultado gerado pelo Software
-no pós-processamento através da inserção de parâmetros, e os resultados teóricos obtidos através dos cálculos mencionados. 
+Para a simulação realizada, foi adotado para o escoamento o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento. Tal fato, no entanto, não causou um erro percentual elevado entre o resultado simulado
+no pós-processamento através da inserção de parâmetros, e os resultados teóricos obtidos através dos cálculos. 
 
  | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
    |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
    | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
 
-Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação inicial dos valores para o Fator de Atrito e suas correlações. Porém, para o perfil de velocidade e a perda de carga a caracterização do regime como laminar afetou os resultados de maneira mais acentuada.
+Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação preliminar dos valores para o Fator de Atrito e suas correlações. Porém, para o perfil de velocidade e a perda de carga, a caracterização do regime como laminar ao invés de turbulento, afetou ambos resultados de maneira mais acentuada.
 
 #### Fator de Atrito:
 
