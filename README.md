@@ -220,13 +220,10 @@ O mesmo processo foi feito para a saída do escoamento. Resultando na seguinte �
    * Sistema Operacional: Windows 10 
     
 
-# 3. Processamento e Pós-Processamento:
+# 3. Processamento:
 
 
-## Simulação preliminar:
-
-
-### Histórico de convergência:
+## Histórico de convergência:
 
 Na etapa do processamento de solução foi obtido o gráfico de convergência da simulação, como pode ser visto, o histórico de convergência encontra-se adequado devido ao fato de  todas as curvas estarem direcionadas para baixo.
 
@@ -234,19 +231,18 @@ Na etapa do processamento de solução foi obtido o gráfico de convergência da
 
 
 
-### Tempo de processamento da simulação:
+## Tempo de processamento da simulação:
 
 A simulação apresentou um tempo de processamento de aproximadamente 4 segundos. Consequente da simplicidade da geometria adotada e da malha utilizada.
 
 ![Solver_Manager_Time](https://user-images.githubusercontent.com/62161754/86954231-ff590500-c12b-11ea-9f5d-69192250f28b.png)
 
-### Resíduos:
+## Resíduos:
 
 Os resíduos, ou seja, o erro da simulação, encontram-se aceitáveis, uma vez que a malha adotada possui valores de qualidade ortogonal e de dissimetria na escala do Muito Bom. Permitindo resultados potencialmente satisfatórios para os requisitos de solução apresentados.
 
-## Resultados preliminares:
 
-Após o processamento, utilizou-se o pacote CFD-Post para obter os resultados da simulação, inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
+Utilizou-se o pacote CFD-Post para obter os resultados da simulação. Inicialmente foi inserido um plano de referência entre a entrada e a saída do tubo.
 
 ![CFD-Post_Location_Plane_Cursor](https://user-images.githubusercontent.com/62161754/86946078-3aedd200-c120-11ea-8f6e-667c9de0e188.png)
 
@@ -299,13 +295,15 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    ![CFD-Post_Chart1_Pressure](https://user-images.githubusercontent.com/62161754/86952932-172f8980-c12a-11ea-91de-cac1c165c13c.png)
    
    
+# 4. Pós-processamento:
 
-Também foram obtidos resultados quantitativos após o processamento, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo do Número de Reynolds e da Perda de carga de acordo com diferentes valores de velocidade média. Com base nisso, permite-se avaliar o perfil do escoamento e consequentemente aferir os valores necessários para o estudo paramétrico do Fator de Atrito.
+## Resultados preliminares:
 
-
-   #### Número de Reynolds:
+   Foram obtidos resultados quantitativos após o processamento, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo do Número de Reynolds e da Perda de carga de acordo com diferentes valores de velocidade média.
    
-   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) é importante para a realização do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
+   ### Número de Reynolds:
+   
+   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) permite avaliar o perfil do escoamento. Sendo importante para a realização do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
    
    ![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
 
@@ -344,7 +342,7 @@ Logo:
    | 0,1 | 4475,86 | 4474,1 | 0,0393% |
    
    
-   #### Perda de carga:
+   ### Perda de carga:
    
    Para o cálculo teórico da Perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif)) em Pa, utilizou-se a seguinte expressão:
    
@@ -375,10 +373,9 @@ Logo:
 | 0,0795 | 3,2530 | 1,8326 | 43,664% |
 | 0,1 | 5,1470 | 2,4963 | 51,499% |
 
+ ### Fator de Atrito:
 
-## Estudo paramétrico preliminar:
-
-Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento, o qual pode ser classificado como regime laminar, regime de transição ou regime turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento. O qual pode ser classificado como regime laminar, regime de transição ou regime turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
 
    * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
    * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
@@ -429,7 +426,6 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
 | "liso"  | 0 |
  
  
-   #### Fator de Atrito:
    
   Foram estabelecidas tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), de acordo com os materiais selecionados e a variação da velocidade.
    
@@ -487,8 +483,7 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
 
 
 
-
-## Análise preliminar:
+# 5. Análise preliminar:
 
 ### Número de Reynolds:
 
@@ -540,13 +535,8 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 | 2,0 | 1,8326 | 8,37% |
 
 
-## Simulação regime turbulento:
 
-
-## Resultados:
-
-
-# Referências:
+# 6. Referências:
 
 MORAN , Michael J. et al. Introdução à engenharia de Sistemas Térmicos: Termodinâmica, Mecânica dos Fluidos e Transferência de Calor. Jonh Wiley & Sons, Inc. 2003.
  
