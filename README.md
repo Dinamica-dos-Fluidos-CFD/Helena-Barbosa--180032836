@@ -379,9 +379,7 @@ Logo:
 | 0,1 | 5,1470 | 2,4963 | 51,499% |
 
 Nota-se que os erros percentuais obtidos são elevados. Os valores de perda de carga para o escoamento em questão apresentou erro de 43,664% entre o valor simulado e o teórico. Não caracterizando o escoamento simulado de acordo com a sua realidade física.
-
-
-
+6
 
 # 5. Estudo Paramétrico:
 
@@ -555,9 +553,13 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 | 2,0 | 1,8326 | 8,37% |
 
 
+# 8. Pós-processamento (regime turbulento):
 
 
-# 7. Referências:
+# 9. Análise Definitiva:
+
+
+# 10. Referências:
 
 MORAN , Michael J. et al. Introdução à engenharia de Sistemas Térmicos: Termodinâmica, Mecânica dos Fluidos e Transferência de Calor. Jonh Wiley & Sons, Inc. 2003.
  
