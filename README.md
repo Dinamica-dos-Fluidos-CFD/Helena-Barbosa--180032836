@@ -507,12 +507,20 @@ Para a simulação realizada, foi adotado para o escoamento o regime laminar. Po
 Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação preliminar dos valores para o Fator de Atrito e suas correlações. Pois, a tedência desse parâmetro perante a variação da velocidade, respeitou a realidade física do escoamento.
 
 
-## Fator de Atrito: ****** alterar
+## Fator de Atrito: 
 
-Com o aumento da velocidade média, foi possível observar uma diminuição no Fator de Atrito. ***************
+O estudo paramétrico adotou duas variáveis para a análise do Fator de Atrito. A velocidade e o material da tubulação. Com o aumento da velocidade, o escoamento passa a abandonar o comportamento laminar e começa a apresentar turbulência. Ou seja, foi comprovada a influência do regime do escoamento perante o Fator de Atrito. A qual está de acordo com o esperado.
 
+Para a mudança de material e sua rugosidade, a análise foi dividida de acordo com:
+   * A mudança simples de material;
+   * A técnica de fabricação, a partir do mesmo material;
+   * A idade do material;
+   
+O material com a rugosidade menor é o de PVC, sendo muito próxima do valor para tubos "lisos". Os dois tubos apresentaram os menores valores de Fator de Atrito, por conta de possuírem uma menor irregularidade nos seus interiores.
 
-Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de material possuem valores de rugosidade elevados e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menos elevados e causam efeitos menores. Comparando os valores de rugosidade para tubulações do mesmo material porém, produzidas de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal. Desta maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade maior, causando efeitos maiores no Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, gerando uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação na rugosidade e no Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito.
+O aço galvanizado com costura, fabricado através da soldagem de uma chapa de metal, possui um valor de rugosidade maior. O aço galvanizado sem costura, produzido a partir da perfuração de um cilindro de metal. Desta forma, o Fator de Atrito foi maior para o tubo de aço galvanizado com costura, devido à sua maior irregularidade. Diferentemente do tubo produzido sem costura, que apresentou um fator de atrito menor.
+
+O ferro fundido novo apresenta um valor de rugosidade muito menor em relação ao ferro fundido velho. Pelo fator temporal, a camada de oxidação, formada no interior de tubos deste material, aumenta gradativamente. Devido a isto, o mesmo ocorre para a rugosidade e para o Fator de Atrito no escoamento.
 
 
 ## Perfil de velocidade:
