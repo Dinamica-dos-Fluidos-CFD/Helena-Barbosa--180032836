@@ -1,3 +1,6 @@
+
+# #2 (com o tópico "Análise preliminar")
+
 # Helena-Barbosa--180032836
 
 **Nota escolhida para substituição:** Nota do Laboratório 
