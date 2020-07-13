@@ -297,11 +297,9 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
 # 4. Pós-processamento:
 
-## Resultados preliminares:
-
-   Foram obtidos resultados quantitativos após o processamento, efetuou-se a inserção de paramêtros de entrada e de saída para o cálculo do Número de Reynolds e da Perda de carga de acordo com diferentes valores de velocidade média.
+   Para a obtenção dos resultados preliminares a seguir, efetuou-se a inserção de paramêtros de entrada e de saída no CFD-Post. Tornando possível realizar os cálculos do Número de Reynolds e da Perda de carga. 
    
-   ### Número de Reynolds:
+   ## Número de Reynolds:
    
    O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) permite avaliar o perfil do escoamento. O qual pode ser classificado como regime laminar, regime de transição ou regime turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
 
@@ -349,7 +347,7 @@ Logo:
    
    Os valores apresentam baixo erro percentual entre os valores simulados e teóricos. De acordo com a tabela elaborada, a velocidade do escoamento e o número de Reynolds são diretamente proporcionais. À medida que a velocidade aumenta de 0,02 m/s para 0,05 m/s, o fluido começa a adotar a transição entre regime laminar e turbulento, notório pelo número de Reynolds. Quando a velocidade atinge 0,0795 m/s, o fluido apresenta comportanto próximo ao turbulento. Portanto, os resultados para o número de Reynolds obtidos apresentam-se coerentes com a realidade física do escoamento.
    
-   ### Perda de carga:
+   ## Perda de carga:
    
    Para o cálculo teórico da Perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif)) em Pa, utilizou-se a seguinte expressão:
    
@@ -382,9 +380,12 @@ Logo:
 
 Nota-se que os erros percentuais obtidos são elevados. Os valores de perda de carga para o escoamento em questão apresentou erro de 43,664% entre o valor simulado e o teórico. Não caracterizando o escoamento simulado de acordo com a sua realidade física.
 
- ### Fator de Atrito:
 
-Em escoamentos podem ocorrer diversas perdas energéticas, entre elas, o Fator de Atrito. Através das forças de cisalhamento do fluido. Para cada regime de escoamento há uma forma de calcular o Fator de Atrito. 
+
+
+# 5. Estudo Paramétrico:
+
+O Fator de Atrito é resultado das forças de cisalhamento do fluido. Sendo assim, é um dos fatores responsáveis pelas perdas energéticas presentes em um escoamento. Para cada regime de escoamento há uma forma de calcular o Fator de Atrito. 
 
 No escoamento laminar, o Fator de Atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
 ) depende apenas do Número de Reynolds:
@@ -409,9 +410,14 @@ A equação de Haaland é explícita em ![CodeCogsEqn_f](https://user-images.git
 
 Além disso, para casos em que a superfície da tubulação é considerada lisa, outra equação aceita é a de Prandtl.
 
-![CodeCogsEqn_Prandtl](https://user-images.githubusercontent.com/62161754/86971333-5f10d980-c147-11ea-837d-426760d69145.gif)
+![CodeCogsEqn_Prandtl](https://user-images.githubusercontent.com/62161754/86971333-5f10d980-c147-11ea-837d-426760d69145.gif) 
 
-Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a tendência do Fator de Atrito de acordo com o tipo de material da tubulação, a técnica de fabricação (para o caso do Aço galvanizado), a idade da tubulção (analisando o ferro fundido) e a velocidade do fluido.
+Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito ( ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif)) e a rugosidade relativa (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)/![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif)). A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
+
+
+![Diagrama_de_Moody_3](https://user-images.githubusercontent.com/62161754/87110939-97dfaa00-c23e-11ea-9775-454d4cd43e8d.jpg)
+
+Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta, em metros. O objetivo é avaliar a tendência do Fator de Atrito. De acordo com o tipo de material da tubulação, a técnica de fabricação, a idade da tubulção e a velocidade do escoamento.
 
 | Material | Rugosidade absoluta (m) |
 |:-----:|:--------------------:|
@@ -485,42 +491,31 @@ Serão considerados os seguintes materiais e seus respectivos valores de rugosid
    | "liso" | 0 | 0,0386112 | 0,0386156 | 0,0113% |
 
 
-# 5. Estudo Paramétrico:
-
- O Diagrama de Moody mostra as relações entre o Fator de Atrito ( ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif)) e a rugosidade relativa (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)/![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif)). A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
-
-
-![Diagrama_de_Moody_3](https://user-images.githubusercontent.com/62161754/87110939-97dfaa00-c23e-11ea-9775-454d4cd43e8d.jpg)
-
-Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds podem variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. 
-
-
-
-
-***Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. ***
+Quando a velocidade média e o Número de Reynolds aumentam, o Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87112513-6963ce00-c242-11ea-87de-3ccd84d13fb1.gif)) decresce. Quando isto ocorre, a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim, os elementos de rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87112534-7680bd00-c242-11ea-8c25-6dd760907016.gif)) passam a emergir através desta camada, tornando o efeito da rugosidade relevante para estes casos. Por isso, a análise com diversos materiais foi importante. A rugosidade apresentou uma relação diretamente proporcional com o Fator de Atrito. Respeitando a realidade física esperada para este estudo paramétrico.
 
 
 # 6. Análise preliminar:
 
-### Número de Reynolds:
+## Número de Reynolds:
 
-Para a simulação realizada, foi adotado para o escoamento o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) foi de 3558,31, caracterizando um regime de transição para turbulento, tornando a simulação efetuada não coerente com a física do escoamento. Tal fato, no entanto, não causou um erro percentual elevado entre o resultado simulado no pós-processamento através da inserção de parâmetros, e os resultados teóricos obtidos através dos cálculos. 
+Para a simulação realizada, foi adotado para o escoamento o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) caracteriza o regime como de transição. Diferente do que foi aderido na condições de contorno, escolhendo a opção laminar. No entanto, não foi observado um erro percentual elevado entre os resultados simulados e os teóricos. 
 
  | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
    |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
    | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
 
-Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação preliminar dos valores para o Fator de Atrito e suas correlações. Porém, para o perfil de velocidade e a perda de carga, a caracterização do regime como laminar ao invés de turbulento, afetou ambos resultados de maneira mais acentuada.
+Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação preliminar dos valores para o Fator de Atrito e suas correlações. Pois, a tedência desse parâmetro perante a variação da velocidade, respeitou a realidade física do escoamento.
 
-### Fator de Atrito:
 
-A partir do resultados apresentados é possível notar que, à medida que ocorre o aumento da velocidade média do escoamento e do número de Reynolds, os valores do Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87112513-6963ce00-c242-11ea-87de-3ccd84d13fb1.gif)) decrescem, quando isto ocorre, a espessura da fina camada viscosa próxima à parede do tubo diminui. Sendo assim, os elementos de rugosidade (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87112534-7680bd00-c242-11ea-8c25-6dd760907016.gif)) passam a emergir através desta camada, tornando o efeito da rugosidade relevante para estes casos. 
+## Fator de Atrito: ****** alterar
 
-Como mencionado anteriormente, quando o escoamento passa a apresentar comportamento turbulento, o Fator de Atrito não depende mais apenas do Número de Reynolds, mas também da rugosidade. Observa-se que quando o valor da rugosidade absoluta aumenta, para o mesmo tubo circular com a área de secção transversal constante, o valor do Fator de Atrito também aumenta.
+Com o aumento da velocidade média, foi possível observar uma diminuição no Fator de Atrito. ***************
 
-Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de material possuem valores de rugosidade elevados e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menos elevados e causam efeitos menores. Comparando os valores de rugosidade para tubulações do mesmo material porém, produzidas de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal. Desta maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade maior, causando efeitos maiores no Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, gerando uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação na rugosidade e no Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito. Sendo assim, os resultados preliminares obtidos, para este estudo paramétrico, correspondem com a realidade física, apesar da caracterização do escoamento não ter sido adequada.
 
-### Perfil de velocidade:
+Ao analisar o efeito da mudança de material da tubulação nota-se que determinados tipos de material possuem valores de rugosidade elevados e consequentemente aumentam os efeitos do Fator de Atrito, assim como outros materiais possuem valores menos elevados e causam efeitos menores. Comparando os valores de rugosidade para tubulações do mesmo material porém, produzidas de maneira distinta, no caso o aço galvanizado, nota-se que o tubo com costura foi fabricado através da soldagem de uma chapa de metal. Desta maneira as extremidades foram unidas pelo calor e instrumentos de soldagem, e portanto, possui um valor de rugosidade maior, causando efeitos maiores no Fator de Atrito em regimes turbulentos. Um pouco diferente do tubo sem costura, o qual sua fabricação consiste na perfuração de um cilindro de metal aquecido, gerando uma rugosidade menor. Para o ferro fundido foi analisada a influência do tempo de uso da tubulação na rugosidade e no Fator de Atrito. Para uma tubulação mais velha a rugosidade tende a aumentar, o mesmo ocorre para o Fator de Atrito.
+
+
+## Perfil de velocidade:
 
 Ao considerar o escoamento como laminar, nota-se a diferença gráfica entre o perfil de velocidade obtido e o esperado. O perfil deve apresentar formato parabólico quando encontrado em regime laminar, no qual os maiores valores de velocidade encontram-se no centro do tubo e diminuem gradativamente ao aproximarem-se da parede da tubulação. A velocidade varia com o raio do tubo, essa variação de velocidade e a viscosidade do fluido resultam em uma tensão de cisalhamento na parede tubo. 
 
@@ -533,7 +528,7 @@ O perfil de velocidade simulado apresenta formato próximo ao parabólico porém
 ![CFD-Post_Chart2_Velocity](https://user-images.githubusercontent.com/62161754/87111197-23f1d180-c23f-11ea-81cb-271cfc051a73.png)
 
 
-### Perda de carga:
+## Perda de carga:
 
 Os valores de perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif)
 ) simulados apresentaram os maiores erros percentuais em relação aos cálculos teóricos, ao compará-los com os demais parâmetros analisados. O escoamento laminar simulado não apresentou valores próximos aos valores calculados, adotando um comportamento não correspondente a realidade física do escoamento.
