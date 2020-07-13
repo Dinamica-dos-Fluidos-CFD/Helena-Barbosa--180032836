@@ -498,13 +498,13 @@ Quando a velocidade média e o Número de Reynolds aumentam, o Fator de Atrito (
 
 ## Número de Reynolds:
 
-Para a simulação realizada, foi adotado para o escoamento o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) caracteriza o regime como de transição. Diferente do que foi aderido na condições de contorno, escolhendo a opção laminar. No entanto, não foi observado um erro percentual elevado entre os resultados simulados e os teóricos. 
+Para a simulação realizada, foi adotado para o escoamento o regime laminar. Porém, a partir do cálculo do Número de Reynolds para a realização do estudo paramétrico, conclui-se que o escoamento apresenta um comportamento mais turbulento. O valor de ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87111638-36b8d600-c240-11ea-98ba-7f5325b05069.gif) caracteriza o regime como de transição. Diferente do que foi aderido na condições de contorno. No entanto, não foi observado um erro percentual elevado entre os resultados simulados e os teóricos. 
 
  | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
    |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
    | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
 
-Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação preliminar dos valores para o Fator de Atrito e suas correlações. Pois, a tedência desse parâmetro perante a variação da velocidade, respeitou a realidade física do escoamento.
+Consequentemente, o baixo valor de erro percentual foi aceitável para a comparação dos valores para o Fator de Atrito e suas correlações. Pois, a tedência crescente deste parâmetro, perante a variação da velocidade, respeitou a realidade física do escoamento.
 
 
 ## Fator de Atrito: 
@@ -516,11 +516,11 @@ Para a mudança de material e sua rugosidade, a análise foi dividida de acordo 
    * A técnica de fabricação, a partir do mesmo material;
    * A idade do material;
    
-O material com a rugosidade menor é o de PVC, sendo muito próxima do valor para tubos "lisos". Os dois tubos apresentaram os menores valores de Fator de Atrito, por conta de possuírem uma menor irregularidade nos seus interiores.
+O material com a rugosidade menor é o de PVC, sendo muito próxima do valor para tubos "lisos". Logo, os dois materiais apresentaram os menores valores de Fator de Atrito, por conta de possuírem uma menor irregularidade nos seus interiores.
 
-O aço galvanizado com costura, fabricado através da soldagem de uma chapa de metal, possui um valor de rugosidade maior. O aço galvanizado sem costura, produzido a partir da perfuração de um cilindro de metal. Desta forma, o Fator de Atrito foi maior para o tubo de aço galvanizado com costura, devido à sua maior irregularidade. Diferentemente do tubo produzido sem costura, que apresentou um fator de atrito menor.
+O aço galvanizado com costura, fabricado através da soldagem de uma chapa de metal, possui um valor de rugosidade maior. O aço galvanizado sem costura, produzido a partir da perfuração de um cilindro de metal, possui rugosidade menor. Desta forma, o Fator de Atrito foi maior para o tubo de aço galvanizado com costura, devido à sua irregularidade. Diferentemente do tubo produzido sem costura, que apresentou um fator de atrito menor.
 
-O ferro fundido novo apresenta um valor de rugosidade muito menor em relação ao ferro fundido velho. Pelo fator temporal, a camada de oxidação, formada no interior de tubos deste material, aumenta gradativamente. Devido a isto, o mesmo ocorre para a rugosidade e para o Fator de Atrito no escoamento.
+O ferro fundido novo apresenta um valor de rugosidade muito menor em relação ao ferro fundido velho. Pelo fator temporal a camada de oxidação, formada no interior de tubos deste material, aumenta gradativamente. Devido a isto, o mesmo ocorre para a rugosidade e para o Fator de Atrito no escoamento.
 
 
 ## Perfil de velocidade:
@@ -553,6 +553,7 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) medido (Pa)| ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87114354-bba6ee00-c246-11ea-8541-f60c20af5ca6.gif) simulado (Pa) | Erro percentual |
 |:-------------------:|:----------------------:|:--------------------:|
 | 2,0 | 1,8326 | 8,37% |
+
 
 
 
