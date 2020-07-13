@@ -303,7 +303,13 @@ Nessa etapa do pós-processamento, após a criação do plano de referência e d
    
    ### Número de Reynolds:
    
-   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) permite avaliar o perfil do escoamento. Sendo importante para a realização do estudo paramétrico do Fator de Atrito, para isso, seu cálculo é realizado da seguinte maneira:
+   O Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif)) permite avaliar o perfil do escoamento. O qual pode ser classificado como regime laminar, regime de transição ou regime turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+
+   * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
+   * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
+   * Regime turbulento: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
+   
+   O cálculo do Número de Reynolds é realizado da seguinte maneira:
    
    ![CodeCogsEqn_n_reynolds](https://user-images.githubusercontent.com/62161754/86963484-fe7b9f80-c13a-11ea-903a-659f8a3d2513.gif)
 
@@ -341,6 +347,7 @@ Logo:
    | 0,0795 | 3558,31 | 3556,5 | 0,0508% |
    | 0,1 | 4475,86 | 4474,1 | 0,0393% |
    
+   Os valores apresentam baixo erro percentual entre os valores simulados e teóricos. De acordo com a tabela elaborada, a velocidade do escoamento e o número de Reynolds são diretamente proporcionais. À medida que a velocidade aumenta de 0,02 m/s para 0,05 m/s, o fluido começa a adotar a transição entre regime laminar e turbulento, notório pelo número de Reynolds. Quando a velocidade atinge 0,0795 m/s, o fluido apresenta comportanto próximo ao turbulento. Portanto, os resultados para o número de Reynolds obtidos apresentam-se coerentes com a realidade física do escoamento.
    
    ### Perda de carga:
    
@@ -373,16 +380,13 @@ Logo:
 | 0,0795 | 3,2530 | 1,8326 | 43,664% |
 | 0,1 | 5,1470 | 2,4963 | 51,499% |
 
+Nota-se que os erros percentuais obtidos são elevados. Os valores de perda de carga para o escoamento em questão apresentou erro de 43,664% entre o valor simulado e o teórico. Não caracterizando o escoamento simulado de acordo com a sua realidade física.
+
  ### Fator de Atrito:
 
-Em escoamentos podem ocorrer diversas perdas energéticas, entre elas há o Fator de Atrito através das forças de cisalhamento do fluido. Para calcular o Fator de Atrito é necessário previamente analisar o comportamento do escoamento. O qual pode ser classificado como regime laminar, regime de transição ou regime turbulento. Estas regiões possuem valores limites característicos para o Número de Reynolds, são eles:
+Em escoamentos podem ocorrer diversas perdas energéticas, entre elas, o Fator de Atrito. Através das forças de cisalhamento do fluido. Para cada regime de escoamento há uma forma de calcular o Fator de Atrito. 
 
-   * Regime laminar: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 2100;
-   * Regime de transição entre laminar e turbulento: 2100 < ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) < 4000;
-   * Regime turbulento: ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif) > 4000;
-   
-
-Para cada região de escoamento há uma forma de calcular o Fator de Atrito. No escoamento laminar o Fator de Atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
+No escoamento laminar, o Fator de Atrito de Darcy (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/86968811-28d15b00-c143-11ea-94d7-0103baca53c1.gif)
 ) depende apenas do Número de Reynolds:
 
 ![CodeCogsEqn_atrito_laminar](https://user-images.githubusercontent.com/62161754/86968814-2969f180-c143-11ea-9bd0-c71eec996e61.gif)
@@ -407,13 +411,7 @@ Além disso, para casos em que a superfície da tubulação é considerada lisa,
 
 ![CodeCogsEqn_Prandtl](https://user-images.githubusercontent.com/62161754/86971333-5f10d980-c147-11ea-837d-426760d69145.gif)
 
-Baseado na expressão de Colebrook, traçou-se o Diagrama de Moody, tal gráfico mostra as relações entre o Fator de Atrito ( ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif)) e a rugosidade relativa (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)/![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif)). A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
-
-
-![Diagrama_de_Moody_3](https://user-images.githubusercontent.com/62161754/87110939-97dfaa00-c23e-11ea-9775-454d4cd43e8d.jpg)
-
-Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds podem variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a tendência do Fator de Atrito de acordo com o tipo de material da tubulação e a velocidade do fluido.
-
+Serão considerados os seguintes materiais e seus respectivos valores de rugosidade absoluta em metros. O objetivo é avaliar a tendência do Fator de Atrito de acordo com o tipo de material da tubulação, a técnica de fabricação (para o caso do Aço galvanizado), a idade da tubulção (analisando o ferro fundido) e a velocidade do fluido.
 
 | Material | Rugosidade absoluta (m) |
 |:-----:|:--------------------:|
@@ -425,7 +423,12 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
 | PVC, plásticos em geral  | 0,0000015 |
 | "liso"  | 0 |
  
+ Tal escolha de parâmetros e variáveis, possui as seguintes finalidades:
  
+   * Analisar os efeitos causados por materiais diferentes.E assim, comprovar a influência da rugosidade no cálculo do Fator de Atrito.
+   * Avaliar a mudança no Fator de Atrito, de acordo com a diferença da rugosidade entre processos de fabricação distintos, para o mesmo material.
+   * Calcular os efeitos da oxidação no mesmo material, porém, com tempos de utilização distintos.
+   * Observar o Fator de Atrito e sua relevância no escoamento, de acordo com a variação da velocidade, e consequentemente, o regime do escoamento.
    
   Foram estabelecidas tabelas comparativas entre os valores teóricos e simulados do Fator de Atrito (![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), de acordo com os materiais selecionados e a variação da velocidade.
    
@@ -482,8 +485,22 @@ Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds
    | "liso" | 0 | 0,0386112 | 0,0386156 | 0,0113% |
 
 
+# 5. Estudo Paramétrico:
 
-# 5. Análise preliminar:
+ O Diagrama de Moody mostra as relações entre o Fator de Atrito ( ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif)), Número de Reynolds (![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/86964518-9201a000-c13c-11ea-829e-d4d213d85e9b.gif)) e a rugosidade relativa (![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/86966121-f6256380-c13e-11ea-9ab2-7eb127fa0991.gif)/![CodeCogsEqn_D](https://user-images.githubusercontent.com/62161754/86963552-16ebba00-c13b-11ea-86e8-d1ad8c8761bd.gif)). A partir do diagrama é possível estimar os valores para o Fator de Atrito e compará-los com os resultados teóricos obtidos.
+
+
+![Diagrama_de_Moody_3](https://user-images.githubusercontent.com/62161754/87110939-97dfaa00-c23e-11ea-9775-454d4cd43e8d.jpg)
+
+Como pode ser visto acima, o comportamento do escoamento e o Número de Reynolds podem variar facilmente de acordo com a velocidade do escoamento, consequentemente o mesmo vale para o fator de atrito na tubulação. 
+
+
+
+
+***Para a análise do estudo paramétrico serão observadas as mudanças no Fator de Atrito de acordo com diferentes valores para a velocidade média e para diferentes materiais. ***
+
+
+# 6. Análise preliminar:
 
 ### Número de Reynolds:
 
@@ -536,7 +553,7 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 
 
 
-# 6. Referências:
+# 7. Referências:
 
 MORAN , Michael J. et al. Introdução à engenharia de Sistemas Térmicos: Termodinâmica, Mecânica dos Fluidos e Transferência de Calor. Jonh Wiley & Sons, Inc. 2003.
  
