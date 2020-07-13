@@ -348,8 +348,8 @@ Logo:
    
    Para o cálculo teórico da Perda de carga (![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif)) em Pa, utilizou-se a seguinte expressão:
    
-   ![CodeCogsEqn_pressureloss](https://user-images.githubusercontent.com/62161754/87108264-46342100-c238-11ea-9ea9-f0b7b256947a.gif)
-
+   ![CodeCogsEqn_pressureloss_up](https://user-images.githubusercontent.com/62161754/87317096-ee7a0c00-c4fc-11ea-8e67-0aa02367e8dd.gif)
+   
    Onde ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87108383-8f847080-c238-11ea-9077-d87850297b36.gif) e ![CodeCogsEqn_L](https://user-images.githubusercontent.com/62161754/87108360-82678180-c238-11ea-9c26-d4c67627341b.gif) são, respectivamente:
    
    * Fator de Atrito, para este cálculo inicial da Perda de carga na tubulação, adotou-se a superfície do cano como "lisa", resultando no seguinte valor:
