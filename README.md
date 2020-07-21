@@ -451,7 +451,7 @@ Serão considerados os seguintes materiais e seus respectivos valores de rugosid
    | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0506346 | 0,0506456 | 0,0217% |
-   | Aço galvanizado sem costura | 0,0006 | 0,0488869 | 0,0488983 | 0,0233% |
+   | Aço galvanizado sem costura | 0,00006 | 0,0488869 | 0,0488983 | 0,0233% |
    | Ferro fundido novo | 0,00025 | 0,0535383 | 0,0525387 | 0,0197% |
    | Ferro fundido com leve oxidação | 0,0003 | 0,0534576 | 0,0534679 | 0,0192% |
    | Ferro fundido velho | 0,003 | 0,0950876 | 0,0950934 | 0,0061% |
@@ -466,7 +466,7 @@ Serão considerados os seguintes materiais e seus respectivos valores de rugosid
    | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0448128 | 0,0448184 | 0,0124% |
-   | Aço galvanizado sem costura | 0,0006 | 0,0427494 | 0,0427554 | 0,0140% |
+   | Aço galvanizado sem costura | 0,00006 | 0,0427494 | 0,0427554 | 0,0140% |
    | Ferro fundido novo | 0,00025 | 0,0470113 | 0,0470166 | 0,0112% |
    | Ferro fundido com leve oxidação | 0,0003 | 0,0480778 | 0,0480829 | 0,0106% |
    | Ferro fundido velho | 0,003 | 0,0922701 | 0,0922726 | 0,0027% |
@@ -481,7 +481,7 @@ Serão considerados os seguintes materiais e seus respectivos valores de rugosid
   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0424226 | 0,0424264 | 0,0089% |
-   | Aço galvanizado sem costura | 0,0006 | 0,0401788 | 0,0401830 | 0,0104% |
+   | Aço galvanizado sem costura | 0,00006 | 0,0401788 | 0,0401830 | 0,0104% |
    | Ferro fundido novo | 0,00025 | 0,0447875 | 0,0447910 | 0,0078% |
    | Ferro fundido com leve oxidação | 0,0003 | 0,0459265 | 0,0459299 | 0,0074% |
    | Ferro fundido velho | 0,003 | 0,0912639 | 0,0912654 | 0,0016% |
