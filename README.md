@@ -452,7 +452,7 @@ Serão considerados os seguintes materiais e seus respectivos valores de rugosid
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
    | Aço galvanizado com costura | 0,00015 | 0,0506346 | 0,0506456 | 0,0217% |
    | Aço galvanizado sem costura | 0,00006 | 0,0488869 | 0,0488983 | 0,0233% |
-   | Ferro fundido novo | 0,00025 | 0,0535383 | 0,0525387 | 0,0197% |
+   | Ferro fundido novo | 0,00025 | 0,0525283 | 0,0525387 | 0,0197% |
    | Ferro fundido com leve oxidação | 0,0003 | 0,0534576 | 0,0534679 | 0,0192% |
    | Ferro fundido velho | 0,003 | 0,0950876 | 0,0950934 | 0,0061% |
    | PVC, plásticos em geral | 0,0000015 | 0,0477268 | 0,0477385 | 0,0245% |
