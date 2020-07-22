@@ -631,7 +631,7 @@ A partir dos resultados acima, é possível notar que a tendência dos valores d
 
 ![CFD-Post2_chart_velocity](https://user-images.githubusercontent.com/62161754/88224577-97341400-cc3f-11ea-98ca-de9eb98acfe6.png)
 
-
+O gráfico do perfil de velocidade, após a mudança no pré-processamento, o perfil obtido caracteriza um escoamento em regime de transição. Portanto obteve-se resultados mais condizentes com a física do escoamento.
 
 
 ## Perda de carga:
@@ -645,7 +645,7 @@ A partir dos resultados acima, é possível notar que a tendência dos valores d
 
 ![CFD-Post2_chart_pressureloss](https://user-images.githubusercontent.com/62161754/88224572-956a5080-cc3f-11ea-9301-9257187e1a74.png)
 
-
+Nota-se que o erro percentual reduziu de maneira significativa após a mudança efetuada. Sendo assim, os resultados teóricos e a simulação estão concordantes entre si e respeitam a física do escoamento. 
 
 
 # 9. Conclusão:
