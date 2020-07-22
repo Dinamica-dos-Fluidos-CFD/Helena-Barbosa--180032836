@@ -514,7 +514,7 @@ Para a mudança de material e sua rugosidade, a análise foi dividida de acordo 
    * A técnica de fabricação, a partir do mesmo material;
    * A idade do material;
    
-O material com a rugosidade menor é o de PVC, sendo muito próxima do valor para tubos "lisos". Logo, os dois materiais apresentaram os menores valores de Fator de Atrito, por conta de possuírem uma menor irregularidade nos seus interiores.
+O material com a rugosidade menor é o de PVC, sendo muito próxima do valor para tubos "lisos". Logo, os dois materiais apresentaram os menores valores de Fator de Atrito, pelo fato de possuírem uma menor irregularidade nos seus interiores.
 
 O aço galvanizado com costura, fabricado através da soldagem de uma chapa de metal, possui um valor de rugosidade maior. O aço galvanizado sem costura, produzido a partir da perfuração de um cilindro de metal, possui rugosidade menor. Desta forma, o Fator de Atrito foi maior para o tubo de aço galvanizado com costura, devido à sua irregularidade. Diferentemente do tubo produzido sem costura, que apresentou um fator de atrito menor.
 
@@ -565,6 +565,8 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
    | 0,05 | 2237,93 | 2239,4 | 0,0656% |
    | 0,0795 | 3558,31 | 3556,7 | 0,0452% |
    | 0,1 | 4475,86 | 4471,1 | 0,1064% |
+
+Ao mudar a caracterização do escoamento na etapa do pré-processamento, o Número de Reynolds apresentou-se mais preciso em relação aos resultados teóricos.
 
 
 ## Fator de Atrito:
@@ -622,6 +624,16 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
    | "liso" | 0 | 0,0386112 | 0,0386232 | 0,0310% |
 
 
+A partir dos resultados acima, é possível notar que a tendência dos valores de Fator de Atrito encontram-se de acordo com a realidade física do escoamento. Assim como foi apresentado anteriormente, com o aumento da velocidade, o valor do fator de atrito diminui. E ainda, para os materiais abordados, o fator de atrito aumenta proporcionalmente de acordo com a rugosidade do material. Tais fatos foram confirmados ateriormente, sendo desnecessária uma comparação posterior para este parâmetro, pois a maior parte das grandezas, referentes ao fator de atrito, encontram-se constantes ou com baixa variação. Porém, para fins educacionais e uma melhor análise do fator de atrito neste escoamento, foram inseridas as tabelas com os valores atualizados.
+
+
+## Perfil de velocidade
+
+![CFD-Post2_chart_velocity](https://user-images.githubusercontent.com/62161754/88224577-97341400-cc3f-11ea-98ca-de9eb98acfe6.png)
+
+
+
+
 ## Perda de carga:
 
 | Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
@@ -633,9 +645,6 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
 
 ![CFD-Post2_chart_pressureloss](https://user-images.githubusercontent.com/62161754/88224572-956a5080-cc3f-11ea-9301-9257187e1a74.png)
 
-## Perfil de velocidade
-
-![CFD-Post2_chart_velocity](https://user-images.githubusercontent.com/62161754/88224577-97341400-cc3f-11ea-98ca-de9eb98acfe6.png)
 
 
 
