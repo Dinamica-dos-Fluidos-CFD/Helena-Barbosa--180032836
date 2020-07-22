@@ -579,7 +579,7 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
    
 
 
-   * ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
+  * ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
    
    | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
@@ -594,7 +594,7 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
    
    
    
-   * ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
+  * ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
    
    | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
@@ -609,7 +609,7 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
   
   
   
-   * ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
+  * ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
 
   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
    |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
@@ -631,8 +631,11 @@ Após a realização da simulação adotando o regime laminar para o escoamento.
 | 0,0795 | 3,2530 | 3,0171 | 7,818% |
 | 0,1 | 5,1470 | 4,7521 | 8,310% |
 
+![CFD-Post2_chart_pressureloss](https://user-images.githubusercontent.com/62161754/88224572-956a5080-cc3f-11ea-9301-9257187e1a74.png)
 
 ## Perfil de velocidade
+
+![CFD-Post2_chart_velocity](https://user-images.githubusercontent.com/62161754/88224577-97341400-cc3f-11ea-98ca-de9eb98acfe6.png)
 
 
 
