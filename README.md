@@ -555,8 +555,88 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 
 # 8. Pós-processamento (regime turbulento):
 
+Após a realização da simulação adotando o regime laminar para o escoamento. Porém, como calculado anteriormente, o Número de Reynolds caracteriza o escoamento como de transição. Com isso, foi possível notar um erro percentual maior para os resultados de perda de carga.  Sendo assim, optou-se por realizar uma nova simulação, considerando o regime como turbulento. Os resultados obtidos encontram-se a seguir:
 
-# 9. Análise Definitiva:
+## Número de Reynolds:
+
+  | Velocidade (m/s) | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) teórico | ![CodeCogsEqn_Re](https://user-images.githubusercontent.com/62161754/87058404-6d5e0480-c1de-11ea-8b69-a48e6d09cf1b.gif) simulado | Erro percentual |
+   |:----------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------:|
+   | 0,02 | 895,17 | 894,99 | 0,0201% |
+   | 0,05 | 2237,93 | 2239,4 | 0,0656% |
+   | 0,0795 | 3558,31 | 3556,7 | 0,0452% |
+   | 0,1 | 4475,86 | 4471,1 | 0,1064% |
+
+
+## Fator de Atrito:
+
+ * ![CodeCogsEqn_v1](https://user-images.githubusercontent.com/62161754/87051052-75fe0d00-c1d5-11ea-877a-ae1e21390aaa.gif)
+   
+   | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
+   |:---------------------------------:|:--------------------------------:|:----------------------------:|
+   | 0,07149480 | 0,07150920 | 0,0201% |
+   
+   
+   
+
+
+   * ![CodeCogsEqn_v2](https://user-images.githubusercontent.com/62161754/87051054-75fe0d00-c1d5-11ea-942b-9da3d07dbb3e.gif)
+   
+   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
+   |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:---------------------:|
+   | Aço galvanizado com costura | 0,00015 | 0,0506346 | 0,05062253 | 0,0183% |
+   | Aço galvanizado sem costura | 0,00006 | 0,0488869 | 0,0488772 | 0,0167% |
+   | Ferro fundido novo | 0,00025 | 0,0525283 | 0,0525194 | 0,0169% |
+   | Ferro fundido com leve oxidação | 0,0003 | 0,0534576 | 0,0534489 | 0,0162% |
+   | Ferro fundido velho | 0,003 | 0,0950876 | 0,0950827 | 0,0112% |
+   | PVC, plásticos em geral | 0,0000015 | 0,0477268 | 0,0477168 | 0,0209% |
+   | "liso" | 0 | 0,0476968 | 0,0476868 | 0,0209% |
+   
+   
+   
+   
+   * ![CodeCogsEqn_vmd](https://user-images.githubusercontent.com/62161754/87051048-75657680-c1d5-11ea-9bf2-5f3ef739e690.gif)
+   
+   | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
+   |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
+   | Aço galvanizado com costura | 0,00015 | 0,0448128 | 0,0448178 | 0,0111% |
+   | Aço galvanizado sem costura | 0,00006 | 0,0427494 | 0,0427547 | 0,0123% |
+   | Ferro fundido novo | 0,00025 | 0,0470113 | 0,0470160 | 0,0100% |
+   | Ferro fundido com leve oxidação | 0,0003 | 0,0480778 | 0,0480823 | 0,0093% |
+   | Ferro fundido velho | 0,003 | 0,0922701 | 0,0922723 | 0,0023% |
+   | PVC, plásticos em geral | 0,0000015 | 0,0413589 | 0,0413645 | 0,0135% |
+   | "liso" | 0 | 0,0413226 | 0,0413283 | 0,0137% |
+  
+  
+  
+  
+   * ![CodeCogsEqn_v4](https://user-images.githubusercontent.com/62161754/87051046-74cce000-c1d5-11ea-8fc0-8f6cfef3884f.gif)
+
+  | Material | ![CodeCogsEqn_E_rugosidade](https://user-images.githubusercontent.com/62161754/87052231-ea857b80-c1d6-11ea-999b-0f913f72a9e0.gif) (m) | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) teórico | ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87052238-ec4f3f00-c1d6-11ea-890e-21ce86ea7511.gif) simulado | Erro percentual |
+   |:------------------------------------:|:---------------------:|:--------------------:|:-----------------------:|:------------------------:|
+   | Aço galvanizado com costura | 0,00015 | 0,0424226 | 0,04242330 | 0,0245% |
+   | Aço galvanizado sem costura | 0,00006 | 0,0401788 | 0,0401901 | 0,0281% |
+   | Ferro fundido novo | 0,00025 | 0,0447875 | 0,0447971 | 0,0214% |
+   | Ferro fundido com leve oxidação | 0,0003 | 0,0459265 | 0,0459358 | 0,0202% |
+   | Ferro fundido velho | 0,003 | 0,0912639 | 0,0912681 | 0,0046% |
+   | PVC, plásticos em geral | 0,0000015 | 0,0386512 | 0,0386631 | 0,0307% |
+   | "liso" | 0 | 0,0386112 | 0,0386232 | 0,0310% |
+
+
+## Perda de carga:
+
+| Velocidade (m/s) | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) teórico | ![CodeCogsEqn_hl](https://user-images.githubusercontent.com/62161754/87109340-c3f92c00-c23a-11ea-86f3-8022ef4eeb87.gif) (Pa) simulado  | Erro percentual |
+|:--------------------:|:--------------------:|:-------------------------:|:--------------:|
+| 0,02 | 0,2058 | 0,2034 | 1,179%  |
+| 0,05 | 1,2867 | 1,2759 | 0,846% |
+| 0,0795 | 3,2530 | 3,0171 | 7,818% |
+| 0,1 | 5,1470 | 4,7521 | 8,310% |
+
+
+## Perfil de velocidade
+
+
+
+# 9. Conclusão:
 
 
 # 10. Referências:
