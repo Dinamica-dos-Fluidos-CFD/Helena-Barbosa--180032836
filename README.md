@@ -355,7 +355,7 @@ Logo:
    
    Onde ![CodeCogsEqn_f](https://user-images.githubusercontent.com/62161754/87108383-8f847080-c238-11ea-9077-d87850297b36.gif) e ![CodeCogsEqn_L](https://user-images.githubusercontent.com/62161754/87108360-82678180-c238-11ea-9c26-d4c67627341b.gif) são, respectivamente:
    
-   * Fator de Atrito, para este cálculo inicial da Perda de carga na tubulação, adotou-se a superfície do cano como "lisa", resultando no seguinte valor:
+   * Fator de Atrito, para este cálculo inicial da Perda de carga na tubulação, adotou-se a superfície do tubo como "lisa", resultando no seguinte valor:
    
    ![CodeCogsEqn_f_number](https://user-images.githubusercontent.com/62161754/87108825-8ba51e00-c239-11ea-86d0-a5f086093802.gif)
    
