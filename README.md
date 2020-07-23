@@ -555,7 +555,16 @@ O gráfico apresenta um comportamento linear. Apesar dos valores teóricos e sim
 
 # 8. Pós-processamento (regime turbulento):
 
-Após a realização da simulação adotando o regime laminar para o escoamento. Porém, como calculado anteriormente, o Número de Reynolds caracteriza o escoamento como de transição. Com isso, foi possível notar um erro percentual maior para os resultados de perda de carga.  Sendo assim, optou-se por realizar uma nova simulação, considerando o regime como turbulento. Os resultados obtidos encontram-se a seguir:
+A simulação anterior adotou o regime laminar para o escoamento. Porém, como calculado anteriormente, o Número de Reynolds caracteriza o escoamento como de transição. Com isso, foi possível notar um erro percentual maior para os resultados de perda de carga.  Sendo assim, optou-se por realizar uma nova simulação, considerando o regime como turbulento. Os resultados obtidos encontram-se a seguir:
+
+## Histórico de convergência:
+
+![Solver_Manager2_Converg](https://user-images.githubusercontent.com/62161754/88337182-a59c3180-cd0c-11ea-8c9c-6e10933ce7cc.png)
+
+## Tempo de processamento da simulação:
+
+![Solver_Manager2_Time](https://user-images.githubusercontent.com/62161754/88337190-a92fb880-cd0c-11ea-87f8-d38883a6bf9d.png)
+
 
 ## Número de Reynolds:
 
@@ -628,6 +637,9 @@ A partir dos resultados acima, é possível notar que a tendência dos valores d
 
 
 ## Perfil de velocidade
+
+![CFD-Post2_Contour_velocity_15](https://user-images.githubusercontent.com/62161754/88337194-ab921280-cd0c-11ea-9bed-dc2bfd2a6d98.png)
+
 
 ![CFD-Post2_chart_velocity](https://user-images.githubusercontent.com/62161754/88224577-97341400-cc3f-11ea-98ca-de9eb98acfe6.png)
 
