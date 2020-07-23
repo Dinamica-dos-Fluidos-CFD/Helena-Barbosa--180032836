@@ -650,6 +650,8 @@ Nota-se que o erro percentual reduziu de maneira significativa após a mudança 
 
 # 9. Conclusão:
 
+De acordo com os resultados apresentados, a relação entre o embasamento teórico e a prática em CFD foi notória. Após as escolhas realizadas para a modelagem e pré-processamento, foi necessário observar se estas condições encontravam-se condizentes com os cálculos efetuados. Desta maneira, as etapas de processamento e pós-processamento forneceram os valores qualitativos e quantitativos necessários para verificar a normalidade da situação. O estudo paramétrico do fator de atrito foi concluído e portanto, foi capaz de demonstrar analiticamente sua relação com os valores de velocidade média e a mudança de material. No caso estudado, a perda de carga aferida na seção da tubulação apresentou-se menor do que valor calculado. Sendo aconselhável avaliar a condição dos instrumentos utilizados para a medição e a consideração de possíveis erros experimentais. Tais erros podem justificar a divergência entre os valores, visto que a alteração da velocidade influencia consideravelmente o cálculo da perda de carga, assim como o diâmetro da tubulação. Também tornando possível supor que a seção analisada pode conter problemas em seu material. Sendo assim, conforme o que foi proposto, o objetivo do projeto foi concluído.
+
 
 # 10. Referências:
 
