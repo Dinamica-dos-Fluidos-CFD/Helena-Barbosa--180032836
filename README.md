@@ -624,7 +624,7 @@ Ao mudar a caracterização do escoamento na etapa do pré-processamento, o Núm
    | "liso" | 0 | 0,0386112 | 0,0386232 | 0,0310% |
 
 
-A partir dos resultados acima, é possível notar que a tendência dos valores de Fator de Atrito encontram-se de acordo com a realidade física do escoamento. Assim como foi apresentado anteriormente, com o aumento da velocidade, o valor do fator de atrito diminui. E ainda, para os materiais abordados, o fator de atrito aumenta proporcionalmente de acordo com a rugosidade do material. Tais fatos foram confirmados ateriormente, sendo desnecessária uma comparação posterior para este parâmetro, pois a maior parte das grandezas, referentes ao fator de atrito, encontram-se constantes ou com baixa variação. Porém, para fins educacionais e uma melhor análise do fator de atrito neste escoamento, foram inseridas as tabelas com os valores atualizados.
+A partir dos resultados acima, é possível notar que a tendência dos valores de Fator de Atrito encontram-se de acordo com a realidade física do escoamento. Assim como foi apresentado anteriormente, o fator de atrito diminui de com o aumento da velocidade, e aumenta proporcionalmente com a rugosidade do material. O baixo erro percentual é consequente de que a maior parte das grandezas referentes ao fator de atrito encontram-se constantes ou com baixa variação. Porém, para fins educacionais e uma melhor análise do fator de atrito neste escoamento, foram inseridas as tabelas com os valores atualizados.
 
 
 ## Perfil de velocidade
