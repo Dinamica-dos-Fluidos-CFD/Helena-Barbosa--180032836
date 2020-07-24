@@ -643,7 +643,7 @@ A partir dos resultados acima, é possível notar que a tendência dos valores d
 
 ![CFD-Post2_chart_velocity](https://user-images.githubusercontent.com/62161754/88224577-97341400-cc3f-11ea-98ca-de9eb98acfe6.png)
 
-O gráfico do perfil de velocidade, após a mudança no pré-processamento, o perfil obtido caracteriza um escoamento em regime de transição. Portanto obteve-se resultados mais condizentes com a física do escoamento.
+No gráfico, após a mudança no pré-processamento, o perfil obtido caracteriza um escoamento em regime de transição. Portanto obteve-se resultados condizentes com a física do escoamento.
 
 
 ## Perda de carga:
