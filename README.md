@@ -660,7 +660,7 @@ No gráfico, após a mudança no pré-processamento, o perfil obtido caracteriza
 Nota-se que o erro percentual reduziu de maneira significativa após a mudança efetuada. Sendo assim, os resultados teóricos e a simulação estão concordantes entre si e respeitam a física do escoamento. 
 
 
-# 9. Conclusão:
+# 9. Conclusões:
 
 De acordo com os resultados apresentados, a relação entre o embasamento teórico e a prática em CFD foi notória. Após as escolhas realizadas para a modelagem e pré-processamento, foi necessário observar se estas condições encontravam-se condizentes com os cálculos efetuados. Desta maneira, as etapas de processamento e pós-processamento forneceram os valores qualitativos e quantitativos necessários para verificar a normalidade da situação. O estudo paramétrico do fator de atrito foi concluído e portanto, foi capaz de demonstrar analiticamente sua relação com os valores de velocidade média e a mudança de material. 
 
